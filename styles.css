@@ -391,7 +391,6 @@ main {
 
 /* Math expression styling */
 .math-expr {
-  display: inline-block;
   background: linear-gradient(135deg, rgba(233, 69, 96, 0.15), rgba(245, 197, 24, 0.15));
   border: 2px solid var(--accent);
   border-radius: 12px;
