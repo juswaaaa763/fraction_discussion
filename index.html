@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Math-Galing: An interactive presentation about subtracting fractions from whole numbers">
+  <meta name="theme-color" content="#e94560">
+  <title>Math-Galing: Fraction Subtraction</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Animated floating math symbols background -->
+  <div class="bg-animation" aria-hidden="true"></div>
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <a href="#" class="logo" data-nav="home">
+      <span class="logo-icon">🧮</span>
+      <span>Math-Galing</span>
+    </a>
+    <span class="offline-badge">⚡ Offline</span>
+    <div class="lang-selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="tl">TL</button>
+      <button class="lang-btn" data-lang="bs">BS</button>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" data-nav="home">Home</a></li>
+        <li><a href="#" data-nav="topics">Topics</a></li>
+        <li><a href="#" data-nav="quiz">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main Content (sections rendered dynamically by script.js) -->
+  <main></main>
+  <!-- Scroll to top button -->
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-icons">📐 ✏️ 📏 🧮</div>
+    <p>Math-Galing &copy; 2026 — Making Math Fun!</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
