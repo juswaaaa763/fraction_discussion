@@ -56,6 +56,7 @@
             <li><a href="#quizzes" class="nav-link">Quizzes</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#credits" class="nav-link">Credits</a></li>
+            <li><button id="settings-toggle" class="btn" style="padding: 0.5rem 0.7rem; margin-left: 0.5rem;" type="button" aria-label="Open settings">Settings</button></li>
             <li><button id="theme-toggle" class="btn" style="padding: 0.5rem 0.6rem; margin-left: 0.5rem; font-size: 1.1rem;" aria-label="Toggle dark mode">🌙</button></li>
           </ul>
           <div class="active-indicator" id="active-indicator" aria-hidden="true"></div>
@@ -93,15 +94,6 @@
           <p class="section-kicker">Lessons</p>
           <h2>Choose a Lesson and Language</h2>
           <p>Switch language instantly and continue learning without reloading the page.</p>
-        </div>
-
-        <div class="controls-row reveal fade-up">
-          <label for="language-select">Language</label>
-          <select id="language-select" aria-label="Select language">
-            <option value="en">English</option>
-            <option value="tl">Tagalog</option>
-            <option value="bi">Bisaya</option>
-          </select>
         </div>
 
         <div id="lesson-grid" class="lesson-grid"></div>
@@ -163,6 +155,21 @@
         <p id="name-modal-desc" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">Please enter your full name as you would like it to appear on your certificate.</p>
         <input type="text" id="user-name-input" class="name-input" placeholder="Your Full Name">
         <button id="save-name-btn" class="btn btn-primary" style="width: 100%;" type="button">Save and Continue</button>
+      </div>
+    </div>
+
+    <div id="settings-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="settings-modal-title">
+      <div class="modal-panel" style="max-width: 440px;">
+        <button id="close-settings-modal" class="close-btn" aria-label="Close settings">&times;</button>
+        <h3 id="settings-modal-title" style="margin-bottom: 1rem;">Settings</h3>
+        <div class="controls-row" style="margin-bottom: 0; width: 100%; justify-content: space-between;">
+          <label for="language-select">Language</label>
+          <select id="language-select" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="tl">Tagalog</option>
+            <option value="bi">Bisaya</option>
+          </select>
+        </div>
       </div>
     </div>
 

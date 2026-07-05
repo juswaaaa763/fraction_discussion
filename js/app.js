@@ -361,6 +361,11 @@
   function applyLanguage(lang) {
     currentLang = lang;
     const pack = window.LanguageService.LANGUAGES[lang];
+    const selector = document.getElementById("language-select");
+    if (selector) {
+      selector.value = lang;
+    }
+    window.StorageService.saveLanguage(lang);
 
     navText(lang);
     document.querySelector(".hero h1").textContent = pack.hero.title;
@@ -381,6 +386,39 @@
   function setupLanguageControl() {
     const selector = document.getElementById("language-select");
     selector.addEventListener("change", () => applyLanguage(selector.value));
+  }
+
+  function setupSettingsModal() {
+    const modal = document.getElementById("settings-modal");
+    const openBtn = document.getElementById("settings-toggle");
+    const closeBtn = document.getElementById("close-settings-modal");
+
+    function closeSettingsModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+    }
+
+    openBtn.addEventListener("click", () => {
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      if (window.innerWidth <= 760) {
+        document.getElementById("nav-links").classList.remove("open");
+        document.getElementById("menu-toggle").setAttribute("aria-expanded", "false");
+      }
+    });
+
+    closeBtn.addEventListener("click", closeSettingsModal);
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        closeSettingsModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && modal.classList.contains("open")) {
+        closeSettingsModal();
+      }
+    });
   }
 
   function setupSectionTransitions() {
@@ -416,8 +454,14 @@
   }
 
   function init() {
+    const savedLanguage = window.StorageService.getLanguage();
+    if (window.LanguageService.LANGUAGES[savedLanguage]) {
+      currentLang = savedLanguage;
+    }
+
     document.getElementById("year").textContent = new Date().getFullYear();
     setupNav();
+    setupSettingsModal();
     setupLanguageControl();
     setupThemeControl();
     setupSectionTransitions();

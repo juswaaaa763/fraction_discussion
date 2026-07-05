@@ -1,5 +1,6 @@
 (function () {
   const KEY = "fraction_flow_stats_v1";
+  const LANGUAGE_KEY = "fraction_flow_language_v1";
 
   function readAllStats() {
     try {
@@ -70,6 +71,14 @@
     localStorage.setItem("fraction_flow_username_v1", name);
   }
 
+  function getLanguage() {
+    return localStorage.getItem(LANGUAGE_KEY) || "en";
+  }
+
+  function saveLanguage(lang) {
+    localStorage.setItem(LANGUAGE_KEY, lang);
+  }
+
   window.StorageService = {
     getLessonStats,
     updateLessonStats,
@@ -77,5 +86,7 @@
     allPassed,
     getUserName,
     saveUserName,
+    getLanguage,
+    saveLanguage,
   };
 })();
