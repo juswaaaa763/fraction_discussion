@@ -108,10 +108,23 @@
         let videoElement = "";
         if (isYouTube) {
           let videoId = "";
-          if (video.includes("youtu.be/")) {
-            videoId = video.split("youtu.be/")[1].split("?")[0];
-          } else if (video.includes("watch?v=")) {
-            videoId = video.split("watch?v=")[1].split("&")[0];
+          try {
+            const parsed = new URL(video);
+            if (parsed.hostname.includes("youtu.be")) {
+              videoId = parsed.pathname.slice(1);
+            } else if (parsed.pathname.includes("/embed/")) {
+              videoId = parsed.pathname.split("/embed/")[1].split("/")[0];
+            } else {
+              videoId = parsed.searchParams.get("v") || "";
+            }
+          } catch (error) {
+            if (video.includes("youtu.be/")) {
+              videoId = video.split("youtu.be/")[1].split("?")[0];
+            } else if (video.includes("/embed/")) {
+              videoId = video.split("/embed/")[1].split("?")[0].split("/")[0];
+            } else if (video.includes("watch?v=")) {
+              videoId = video.split("watch?v=")[1].split("&")[0];
+            }
           }
           const embedUrl = `https://www.youtube.com/embed/${videoId}`;
           videoElement = `<iframe class="lesson-video" src="${embedUrl}?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-sm); margin: 1rem 0;"></iframe>`;
@@ -157,7 +170,7 @@
       });
     });
 
-    const videos = document.querySelectorAll(".lesson-video");
+    const videos = document.querySelectorAll("video.lesson-video");
     videos.forEach((video) => {
       video.addEventListener("play", () => {
         const overlay = video.parentElement.querySelector(".video-overlay");
