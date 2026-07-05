@@ -100,8 +100,22 @@
       .map((lessonId, index) => {
         const lesson = langPack.lessonsData[lessonId];
         const stats = window.StorageService.getLessonStats(lessonId);
-        const video = encodePath(window.LanguageService.LESSON_VIDEO_MAP[lessonId][currentLang]);
+        const rawVideoPath = window.LanguageService.LESSON_VIDEO_MAP[lessonId][currentLang];
+        const isYouTube = rawVideoPath.includes("youtube.com") || rawVideoPath.includes("youtu.be");
+        const video = isYouTube ? rawVideoPath : encodePath(rawVideoPath);
         const trophy = getTrophyIcon(stats.bestPercent);
+
+        let videoElement = "";
+        if (isYouTube) {
+          const embedUrl = video.replace("watch?v=", "embed/");
+          videoElement = `<iframe class="lesson-video" src="${embedUrl}?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-sm); margin: 1rem 0;"></iframe>`;
+        } else {
+          videoElement = `
+              <video class="lesson-video" controls preload="metadata" aria-label="Lesson video for ${lesson.title}">
+                <source src="${video}" type="video/mp4" />
+                Your browser does not support video playback.
+              </video>`;
+        }
 
         return `
           <article class="lesson-card reveal fade-up" id="${lessonId}" style="display: flex; flex-direction: column;">
@@ -113,10 +127,7 @@
             <p style="flex-grow: 1;">${lesson.description}</p>
             
             <div class="video-container" style="position: relative;">
-              <video class="lesson-video" controls preload="metadata" aria-label="Lesson video for ${lesson.title}">
-                <source src="${video}" type="video/mp4" />
-                Your browser does not support video playback.
-              </video>
+              ${videoElement}
               <div class="video-overlay" style="display: none; position: absolute; inset: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px); border-radius: var(--radius-sm);  align-items: center; justify-content: center; flex-direction: column; gap: 1rem; color: white; margin: 1rem 0;">
                 <p style="font-weight: 700; font-size: 1.2rem;">Ready for the Quiz?</p>
                 <button class="btn btn-primary overlay-quiz-btn" data-lesson="${lessonId}" type="button">Take Quiz Now</button>
