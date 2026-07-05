@@ -314,7 +314,7 @@
     },
     lesson4: {
       en: "video_discussions/english_version/(english) subtracting two mixed numbers.mp4",
-      tl: "https://www.youtube.com/watch?v=fqT3tE2AgCw",
+      tl: "https://youtu.be/fqT3tE2AgCw?si=Q3NDeMd98Thzx4XR",
       bi: "video_discussions/bisaya_version/(bisaya) Subtracting two mixed numbers.mp4",
     },
   };

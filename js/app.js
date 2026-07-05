@@ -107,7 +107,13 @@
 
         let videoElement = "";
         if (isYouTube) {
-          const embedUrl = video.replace("watch?v=", "embed/");
+          let videoId = "";
+          if (video.includes("youtu.be/")) {
+            videoId = video.split("youtu.be/")[1].split("?")[0];
+          } else if (video.includes("watch?v=")) {
+            videoId = video.split("watch?v=")[1].split("&")[0];
+          }
+          const embedUrl = `https://www.youtube.com/embed/${videoId}`;
           videoElement = `<iframe class="lesson-video" src="${embedUrl}?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-sm); margin: 1rem 0;"></iframe>`;
         } else {
           videoElement = `
