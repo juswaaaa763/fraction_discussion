@@ -313,24 +313,24 @@
 
   const LESSON_VIDEO_MAP = {
     lesson1: {
-      en: "video_discussions/english_version/(english) subtracting mixed number from a whole number.mp4",
-      tl: "video_discussions/tagalog_version/(Tagalog) subtracting mixed number from a whole number.mp4",
-      bi: "video_discussions/bisaya_version/(bisaya) subtracting a mixed number from a whole number.mp4",
+      en: "https://www.youtube.com/embed/lEHH2KzmkYU?si=4To4fG7gGa6AjXVM",
+      tl: "https://www.youtube.com/embed/hmFXjk7KVVc?si=3ChF9e7uPpGGAT8e",
+      bi: "https://www.youtube.com/embed/8ewqao3u2vs?si=vp-8rfltX29ITxDD",
     },
     lesson2: {
-      en: "video_discussions/english_version/(english) subtracting mixed numbers with proper fractions.mp4",
-      tl: "video_discussions/tagalog_version/(Tagalog) subtracting mixed number with proper fraction.mp4",
-      bi: "video_discussions/bisaya_version/(bisaya) subtracting mixed number with proper fraction.mp4",
+      en: "https://www.youtube.com/embed/Aw2oaGEwLFE?si=AKgBOj_soYZRd8Ek",
+      tl: "https://www.youtube.com/embed/EnR69VxA19I?si=O93i9X2TDMavqqCd",
+      bi: "https://www.youtube.com/embed/JAL-ScLDhgU?si=IPTBDZvGqFIJBVrR",
     },
     lesson3: {
-      en: "video_discussions/english_version/(english) subtracting A Proper Fraction From A whole number.mp4",
-      tl: "video_discussions/tagalog_version/(Tagalog) subtracting a Proper Fraction from A Whole Number.mp4",
-      bi: "video_discussions/bisaya_version/(bisaya) subtracting 1 proper fraction from a whole number.mp4",
+      en: "https://www.youtube.com/embed/t0gg9woQCIg?si=GGhadbY58DKGpk7x",
+      tl: "https://www.youtube.com/embed/Hkx6cYSzw-w?si=wiBW5NFzB4klrE8c",
+      bi: "https://www.youtube.com/embed/0zCC0tWgwvw?si=q2jEy0bONZfxGK5Q",
     },
     lesson4: {
-      en: "video_discussions/english_version/(english) subtracting two mixed numbers.mp4",
+      en: "https://www.youtube.com/embed/ATVIWCf2RD0?si=UFUGA-xaEEoLnGpa",
       tl: "https://www.youtube.com/embed/fqT3tE2AgCw?si=xv_5lTTIkIEQKstH",
-      bi: "video_discussions/bisaya_version/(bisaya) Subtracting two mixed numbers.mp4",
+      bi: "https://www.youtube.com/embed/hVsIt__99pg?si=o3f0W3LPLMoik_xQ",
     },
   };
 
