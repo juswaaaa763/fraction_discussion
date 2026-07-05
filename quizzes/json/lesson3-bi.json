@@ -1,0 +1,366 @@
+﻿{
+    "title":  "Leksyon 3 Pagsulay",
+    "description":  "Praktis sa pagbawas og sakto nga fraction gikan sa tibuok nga numero.",
+    "questions":  [
+                      {
+                          "id":  "l3q1",
+                          "prompt":  "2 - 1/3 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "1 2/3"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "2 2/3"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "1 1/3"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "1/3"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 2 as 1 3/3. Unya 1 3/3 - 1/3 = 1 2/3."
+                      },
+                      {
+                          "id":  "l3q2",
+                          "prompt":  "5 - 3/4 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "4 1/4"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "4 3/4"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "2 1/4"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "5 1/4"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Ilisi ang porma 5 as 4 4/4. Unya 4 4/4 - 3/4 = 4 1/4."
+                      },
+                      {
+                          "id":  "l3q3",
+                          "prompt":  "1 - 5/8 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "3/8"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "13/8"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "5/8"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "1 3/8"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 1 as 8/8. Unya 8/8 - 5/8 = 3/8."
+                      },
+                      {
+                          "id":  "l3q4",
+                          "prompt":  "10 - 2/5 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "9 3/5"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "9 2/5"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "10 3/5"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "8 3/5"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Ilisi ang porma 10 as 9 5/5. Unya 9 5/5 - 2/5 = 9 3/5."
+                      },
+                      {
+                          "id":  "l3q5",
+                          "prompt":  "4 - 1/6 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "3 5/6"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "4 5/6"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "3 1/6"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "3 5/12"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 4 as 3 6/6, unya ibawas 1/6."
+                      },
+                      {
+                          "id":  "l3q6",
+                          "prompt":  "12 - 7/10 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "11 3/10"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "11 7/10"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "10 3/10"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "12 3/10"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Ilisi ang porma 12 as 11 10/10. Kalainan kay 11 3/10."
+                      },
+                      {
+                          "id":  "l3q7",
+                          "prompt":  "8 - 4/9 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "7 4/9"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "8 5/9"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "7 5/9"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "6 5/9"
+                                          }
+                                      ],
+                          "correctChoiceId":  "c",
+                          "explanation":  "Isulat pag-usab 8 as 7 9/9. Unya 9/9 - 4/9 = 5/9."
+                      },
+                      {
+                          "id":  "l3q8",
+                          "prompt":  "15 - 3/7 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "14 3/7"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "14 4/7"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "15 4/7"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "14 7/3"
+                                          }
+                                      ],
+                          "correctChoiceId":  "b",
+                          "explanation":  "Ilisi ang porma 15 as 14 7/7. Unya ibawas 3/7 aron mahimong 14 4/7."
+                      },
+                      {
+                          "id":  "l3q9",
+                          "prompt":  "25 - 1/2 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "24 1/2"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "25 1/2"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "23 1/2"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "24"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 25 as 24 2/2. Unya ibawas 1/2."
+                      },
+                      {
+                          "id":  "l3q10",
+                          "prompt":  "6 - 11/12 = ?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "5 1/12"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "6 1/12"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "4 1/12"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "5 11/12"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 6 as 5 12/12, unya 12/12 - 11/12 = 1/12."
+                      },
+                      {
+                          "id":  "l3q11",
+                          "prompt":  "5 m nga ribbon minus 2/3 m katumbas sa?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "4 2/3 m"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "3 1/3 m"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "4 1/3 m"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "5 1/3 m"
+                                          }
+                                      ],
+                          "correctChoiceId":  "c",
+                          "explanation":  "Ilisi ang porma 5 as 4 3/3. Unya ibawas 2/3."
+                      },
+                      {
+                          "id":  "l3q12",
+                          "prompt":  "3 keyks minus 5/6 keyk katumbas sa?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "2 1/6 cakes"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "2 5/6 cakes"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "1 1/6 cakes"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "3 1/6 cakes"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 3 as 2 6/6. Unya 6/6 - 5/6 = 1/6."
+                      },
+                      {
+                          "id":  "l3q13",
+                          "prompt":  "2 oras minus 1/4 oras katumbas sa?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "1 3/4 oras"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "3/4 oras"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "2 3/4 oras"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "1 1/4 oras"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Ilisi ang porma 2 as 1 4/4. Unya ibawas 1/4."
+                      },
+                      {
+                          "id":  "l3q14",
+                          "prompt":  "8 litro minus 3/5 litro katumbas sa?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "7 2/5 litro"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "6 2/5 litro"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "8 2/5 litro"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "7 3/5 litro"
+                                          }
+                                      ],
+                          "correctChoiceId":  "a",
+                          "explanation":  "Isulat pag-usab 8 as 7 5/5, unya ibawas 3/5."
+                      },
+                      {
+                          "id":  "l3q15",
+                          "prompt":  "12 ektarya minus 7/8 ektarya katumbas sa?",
+                          "choices":  [
+                                          {
+                                              "id":  "a",
+                                              "text":  "10 1/8 ektaryas"
+                                          },
+                                          {
+                                              "id":  "b",
+                                              "text":  "11 1/8 ektaryas"
+                                          },
+                                          {
+                                              "id":  "c",
+                                              "text":  "11 7/8 ektaryas"
+                                          },
+                                          {
+                                              "id":  "d",
+                                              "text":  "12 1/8 ektaryas"
+                                          }
+                                      ],
+                          "correctChoiceId":  "b",
+                          "explanation":  "Ilisi ang porma 12 as 11 8/8. Ibawas 7/8 aron mahimong 11 1/8."
+                      }
+                  ]
+}
