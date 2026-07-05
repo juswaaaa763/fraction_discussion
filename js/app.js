@@ -372,6 +372,9 @@
     document.querySelector(".hero-content > p:nth-of-type(2)").textContent = pack.hero.intro;
     document.querySelector(".hero-actions .btn-primary").textContent = pack.hero.start;
     document.querySelector(".hero-actions .btn-ghost").textContent = pack.hero.quiz;
+    document.getElementById("settings-toggle").textContent = pack.settings.button;
+    document.getElementById("settings-modal-title").textContent = pack.settings.title;
+    document.getElementById("settings-language-label").textContent = pack.settings.languageLabel;
     document.getElementById("section-transition-text").textContent = pack.quizText.transitionLoading;
 
     document.querySelector("#lessons .section-head h2").textContent = pack.lessons.heading;

@@ -13,6 +13,11 @@
       lessons: {
         heading: "Choose a Lesson and Language",
       },
+      settings: {
+        button: "Settings",
+        title: "Settings",
+        languageLabel: "Language",
+      },
       quizText: {
         takeQuiz: "Take Quiz",
         highestScore: "Highest Score",
@@ -111,6 +116,11 @@
       lessons: {
         heading: "Pumili ng Aralin at Wika",
       },
+      settings: {
+        button: "Mga Setting",
+        title: "Mga Setting",
+        languageLabel: "Wika",
+      },
       quizText: {
         takeQuiz: "Kumuha ng Quiz",
         highestScore: "Pinakamataas na Iskor",
@@ -208,6 +218,11 @@
       },
       lessons: {
         heading: "Pilia ang Leksyon ug Pinulongan",
+      },
+      settings: {
+        button: "Settings",
+        title: "Settings",
+        languageLabel: "Pinulongan",
       },
       quizText: {
         takeQuiz: "Pag-Quiz",
