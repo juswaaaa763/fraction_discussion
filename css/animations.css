@@ -1,47 +1,47 @@
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@keyframes boardRock {
+  0%, 100% { transform: rotate(-6deg) translateY(0); }
+  50% { transform: rotate(6deg) translateY(-4px); }
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px) rotate(0deg) scale(1);
-  }
-  50% {
-    transform: translateY(-24px) rotate(8deg) scale(1.05);
-  }
-  100% {
-    transform: translateY(0px) rotate(0deg) scale(1);
-  }
+  0% { transform: translateY(0px) rotate(0deg) scale(1); }
+  50% { transform: translateY(-26px) rotate(10deg) scale(1.06); }
+  100% { transform: translateY(0px) rotate(0deg) scale(1); }
 }
 
 @keyframes popIn {
-  0% {
-    transform: scale(0.9) translateY(15px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-  }
+  0% { transform: scale(0.9) translateY(15px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
 }
 
 @keyframes ripple {
-  from {
-    transform: scale(0);
-    opacity: 0.6;
-  }
-  to {
-    transform: scale(10);
-    opacity: 0;
-  }
+  from { transform: scale(0); opacity: 0.6; }
+  to { transform: scale(10); opacity: 0; }
 }
 
 @keyframes meshGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+}
+
+@keyframes badgePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+@keyframes sparkleSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
 }
 
 .reveal {
@@ -51,22 +51,12 @@
   will-change: opacity, transform;
 }
 
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { opacity: 1; transform: translateY(0); }
 
-.fade-up {
-  transform: translateY(30px);
-}
+.fade-up { transform: translateY(30px); }
 
-.slide-right {
-  transform: translateX(30px);
-}
-
-.slide-right.visible {
-  transform: translateX(0);
-}
+.slide-right { transform: translateX(30px); }
+.slide-right.visible { transform: translateX(0); }
 
 .ripple-span {
   position: absolute;
@@ -77,6 +67,17 @@
   pointer-events: none;
 }
 
-.celebrate {
-  animation: popIn 0.5s ease;
+.celebrate { animation: popIn 0.5s ease; }
+
+.wiggle-hover:hover { animation: wiggle 0.4s ease; }
+
+.level-badge { animation: badgePulse 2.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

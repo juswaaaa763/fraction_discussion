@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn fraction subtraction with interactive lessons and multilingual quizzes."
+      content="Learn fraction subtraction with 3D lessons, tilt-card badges, and multilingual quizzes."
     />
-    <title>Fraction Flow Academy</title>
-    <!-- Dynamic SVG Favicon to fix the 404 error and add a logo to the browser tab -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>➗</text></svg>" />
-    
+    <title>Fraction Flow: Skate Squad</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛹</text></svg>" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Nunito:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -23,41 +22,46 @@
   </head>
   <body>
     <div id="page-loader" class="page-loader" aria-live="polite" aria-label="Loading content">
-      <div class="loader-orb"></div>
-      <p>Preparing your lesson space...</p>
+      <div class="loader-board">
+        <div class="board-deck"></div>
+        <div class="board-wheel wheel-l"></div>
+        <div class="board-wheel wheel-r"></div>
+      </div>
+      <p>Waxing the ramp&hellip;</p>
     </div>
 
     <div id="section-transition" class="section-transition" aria-hidden="true">
-      <div class="transition-dot"></div>
+      <div class="transition-star">★</div>
       <p id="section-transition-text">Loading section...</p>
     </div>
 
-    <div class="math-bg" aria-hidden="true">
-      <span>1/2</span>
-      <span>3/4</span>
-      <span>+</span>
-      <span>-</span>
-      <span>=</span>
-      <span>&#8730;</span>
-      <span>&#247;</span>
-      <span>x</span>
+    <div class="sky-layer" aria-hidden="true">
+      <div class="grid-floor"></div>
+      <span class="drift shape-star">★</span>
+      <span class="drift shape-bolt">⚡</span>
+      <span class="drift shape-halfpipe">◠</span>
+      <span class="drift shape-frac">¾</span>
+      <span class="drift shape-frac2">⅓</span>
+      <span class="drift shape-diamond">◆</span>
+      <span class="drift shape-star2">✦</span>
+      <span class="drift shape-plus">+</span>
     </div>
 
     <header class="site-header" id="home">
       <nav class="navbar" aria-label="Main navigation">
         <div class="nav-inner">
-          <a class="logo" href="#home">Fraction Flow</a>
+          <a class="logo" href="#home"><span class="logo-badge">🛹</span>Fraction Flow</a>
           <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
           <ul class="nav-links" id="nav-links">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#lessons" class="nav-link">Lessons</a></li>
-            <li><a href="#quizzes" class="nav-link">Quizzes</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#credits" class="nav-link">Credits</a></li>
-            <li><button id="settings-toggle" class="btn" style="padding: 0.5rem 0.7rem; margin-left: 0.5rem;" type="button" aria-label="Open settings">Settings</button></li>
-            <li><button id="theme-toggle" class="btn" style="padding: 0.5rem 0.6rem; margin-left: 0.5rem; font-size: 1.1rem;" aria-label="Toggle dark mode">🌙</button></li>
+            <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+            <li><a href="#lessons" class="nav-link" data-i18n="nav.lessons">Lessons</a></li>
+            <li><a href="#quizzes" class="nav-link" data-i18n="nav.quizzes">Quizzes</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+            <li><a href="#credits" class="nav-link" data-i18n="nav.credits">Credits</a></li>
+            <li><button id="settings-toggle" class="btn btn-chip" type="button" aria-label="Open settings">⚙️</button></li>
+            <li><button id="theme-toggle" class="btn btn-chip" aria-label="Toggle dark mode">🌙</button></li>
           </ul>
           <div class="active-indicator" id="active-indicator" aria-hidden="true"></div>
         </div>
@@ -65,24 +69,25 @@
       </nav>
 
       <section class="hero reveal fade-up">
-        <div class="hero-content">
-          <p class="pill">Grade-School Math Learning Hub</p>
-          <h1>Master Fraction Subtraction with Confidence</h1>
-          <p>
-            Explore multilingual video lessons, take dynamic quizzes, and review step-by-step solutions.
-            Designed to make fraction subtraction clear, visual, and fun.
+        <div class="hero-content tilt-card" data-tilt>
+          <p class="pill" data-i18n="hero.pill">Grade-School Math Learning Hub</p>
+          <h1 data-i18n="hero.title">Land Every Fraction Trick</h1>
+          <p data-i18n="hero.body">
+            Ride through 3D lessons, flip tilt-cards, and land clean tricks on fraction
+            subtraction quizzes. Every level unlocks a new move.
           </p>
           <div class="hero-actions">
-            <a href="#lessons" class="btn btn-primary ripple">Start Learning</a>
-            <a href="#quizzes" class="btn btn-ghost ripple">Take a Quiz</a>
+            <a href="#lessons" class="btn btn-primary ripple" data-i18n="hero.cta1">Start Riding</a>
+            <a href="#quizzes" class="btn btn-ghost ripple" data-i18n="hero.cta2">Take a Quiz</a>
           </div>
         </div>
-        <div class="hero-card glass reveal slide-right">
-          <h2>Today at a Glance</h2>
+        <div class="hero-card tilt-card sticker" data-tilt>
+          <span class="sticker-corner">NEW</span>
+          <h2 data-i18n="hero.today">Today's Deck</h2>
           <ul>
-            <li><span>4</span> Fraction subtraction lessons</li>
-            <li><span>3</span> Language options</li>
-            <li><span>15</span> Questions per quiz</li>
+            <li><span>4</span> <span data-i18n="hero.stat1">Lesson levels</span></li>
+            <li><span>3</span> <span data-i18n="hero.stat2">Languages to ride in</span></li>
+            <li><span>15</span> <span data-i18n="hero.stat3">Tricks per quiz</span></li>
           </ul>
         </div>
       </section>
@@ -91,9 +96,9 @@
     <main>
       <section id="lessons" class="section">
         <div class="section-head reveal fade-up">
-          <p class="section-kicker">Lessons</p>
-          <h2>Choose a Lesson and Language</h2>
-          <p>Switch language instantly and continue learning without reloading the page.</p>
+          <p class="section-kicker" data-i18n="lessons.kicker">Level Select</p>
+          <h2 data-i18n="lessons.title">Pick Your Lesson</h2>
+          <p data-i18n="lessons.body">Clear a level to unlock the next trick in fraction subtraction.</p>
         </div>
 
         <div id="lesson-grid" class="lesson-grid"></div>
@@ -101,47 +106,51 @@
 
       <section id="quizzes" class="section alt-section">
         <div class="section-head reveal fade-up">
-          <p class="section-kicker">Quiz Center</p>
-          <h2>Track Progress and Challenge Yourself</h2>
-          <p>Your highest scores and attempts are saved automatically on this device.</p>
+          <p class="section-kicker" data-i18n="quizzes.kicker">Quiz Arcade</p>
+          <h2 data-i18n="quizzes.title">Chase a High Score</h2>
+          <p data-i18n="quizzes.body">Your best scores and attempts are saved right on this device.</p>
         </div>
         <div id="quiz-dashboard" class="quiz-dashboard"></div>
       </section>
 
       <section id="about" class="section">
         <div class="section-head reveal fade-up">
-          <p class="section-kicker">About</p>
-          <h2>Why Fraction Flow?</h2>
+          <p class="section-kicker" data-i18n="about.kicker">About</p>
+          <h2 data-i18n="about.title">Why Fraction Flow?</h2>
         </div>
         <div class="about-grid">
-          <article class="glass reveal fade-up">
-            <h3>Focused Learning</h3>
-            <p>Each lesson targets one subtraction skill and reinforces it with guided practice.</p>
+          <article class="glass tilt-card reveal fade-up" data-tilt>
+            <span class="about-icon">🎯</span>
+            <h3 data-i18n="about.card1.title">One Trick at a Time</h3>
+            <p data-i18n="about.card1.body">Every lesson locks in on one subtraction skill, then drills it until it sticks.</p>
           </article>
-          <article class="glass reveal fade-up">
-            <h3>Multilingual Access</h3>
-            <p>Students can learn in English, Tagalog, or Bisaya based on comfort and context.</p>
+          <article class="glass tilt-card reveal fade-up" data-tilt>
+            <span class="about-icon">🌐</span>
+            <h3 data-i18n="about.card2.title">Ride in Your Language</h3>
+            <p data-i18n="about.card2.body">Switch instantly between English, Tagalog, or Bisaya, no reload needed.</p>
           </article>
-          <article class="glass reveal fade-up">
-            <h3>Interactive Mastery</h3>
-            <p>Randomized quizzes, instant feedback, and complete solutions improve retention.</p>
+          <article class="glass tilt-card reveal fade-up" data-tilt>
+            <span class="about-icon">🏆</span>
+            <h3 data-i18n="about.card3.title">Score, Then Show It Off</h3>
+            <p data-i18n="about.card3.body">Randomized quizzes, instant feedback, and a certificate once you land it clean.</p>
           </article>
         </div>
       </section>
 
       <section id="credits" class="section alt-section">
         <div class="section-head reveal fade-up">
-          <p class="section-kicker">Credits</p>
-          <h2>Built for Better Math Experiences</h2>
-          <p>
-            Educational videos and quiz content are integrated from your prepared lesson resources.
+          <p class="section-kicker" data-i18n="credits.kicker">Credits</p>
+          <h2 data-i18n="credits.title">Built for Better Math Sessions</h2>
+          <p data-i18n="credits.body">
+            Lessons, diagrams, and quiz logic are generated fresh inside this page &mdash; no external
+            video files required.
           </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Fraction Flow Academy. Learn. Practice. Improve.</p>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.text">Fraction Flow Academy. Learn. Practice. Land it.</span></p>
     </footer>
 
     <a href="#home" id="back-to-top" class="back-to-top btn-primary" aria-label="Back to top">
@@ -149,21 +158,21 @@
     </a>
 
     <div id="name-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="name-modal-title">
-      <div class="modal-panel" style="max-width: 440px; text-align: center;">
+      <div class="modal-panel sticker" style="max-width: 440px; text-align: center;">
         <button id="close-name-modal" class="close-btn" aria-label="Close name dialog">&times;</button>
-        <h3 id="name-modal-title" style="margin-bottom: 0.8rem;">Enter Your Name</h3>
-        <p id="name-modal-desc" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">Please enter your full name as you would like it to appear on your certificate.</p>
-        <input type="text" id="user-name-input" class="name-input" placeholder="Your Full Name">
-        <button id="save-name-btn" class="btn btn-primary" style="width: 100%;" type="button">Save and Continue</button>
+        <h3 id="name-modal-title" data-i18n="name.title">Enter Your Rider Name</h3>
+        <p id="name-modal-desc" class="modal-sub" data-i18n="name.desc">This is the name that goes on your certificate.</p>
+        <input type="text" id="user-name-input" class="name-input" data-i18n-placeholder="name.placeholder" placeholder="Your Full Name">
+        <button id="save-name-btn" class="btn btn-primary" style="width: 100%;" type="button" data-i18n="name.save">Save and Continue</button>
       </div>
     </div>
 
     <div id="settings-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="settings-modal-title">
-      <div class="modal-panel" style="max-width: 440px;">
+      <div class="modal-panel sticker" style="max-width: 440px;">
         <button id="close-settings-modal" class="close-btn" aria-label="Close settings">&times;</button>
-        <h3 id="settings-modal-title" style="margin-bottom: 1rem;">Settings</h3>
+        <h3 id="settings-modal-title" data-i18n="settings.title">Settings</h3>
         <div class="controls-row" style="margin-bottom: 0; width: 100%; justify-content: space-between;">
-          <label id="settings-language-label" for="language-select">Language</label>
+          <label id="settings-language-label" for="language-select" data-i18n="settings.language">Language</label>
           <select id="language-select" aria-label="Select language">
             <option value="en">English</option>
             <option value="tl">Tagalog</option>
@@ -174,9 +183,16 @@
     </div>
 
     <div id="quiz-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="quiz-modal-title">
-      <div class="modal-panel">
+      <div class="modal-panel sticker">
         <button id="close-quiz-modal" class="close-btn" aria-label="Close quiz">&times;</button>
         <div id="quiz-modal-body"></div>
+      </div>
+    </div>
+
+    <div id="lesson-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="lesson-modal-title">
+      <div class="modal-panel sticker">
+        <button id="close-lesson-modal" class="close-btn" aria-label="Close lesson">&times;</button>
+        <div id="lesson-modal-body"></div>
       </div>
     </div>
 
