@@ -22,6 +22,69 @@
     return clone;
   }
 
+  function gcd(a, b) {
+    let x = Math.abs(a);
+    let y = Math.abs(b);
+    while (y !== 0) {
+      const t = y;
+      y = x % y;
+      x = t;
+    }
+    return x || 1;
+  }
+
+  function parseChoiceTextToFraction(text) {
+    if (typeof text !== "string") {
+      return null;
+    }
+
+    const trimmed = text.trim();
+
+    const mixed = trimmed.match(/^(\d+)\s+(\d+)\/(\d+)/);
+    if (mixed) {
+      const whole = Number(mixed[1]);
+      const num = Number(mixed[2]);
+      const den = Number(mixed[3]);
+      if (!Number.isFinite(whole) || !Number.isFinite(num) || !Number.isFinite(den) || den === 0) {
+        return null;
+      }
+      const numerator = whole * den + num;
+      const divisor = gcd(numerator, den);
+      return { n: numerator / divisor, d: den / divisor };
+    }
+
+    const fraction = trimmed.match(/^(\d+)\/(\d+)/);
+    if (fraction) {
+      const num = Number(fraction[1]);
+      const den = Number(fraction[2]);
+      if (!Number.isFinite(num) || !Number.isFinite(den) || den === 0) {
+        return null;
+      }
+      const divisor = gcd(num, den);
+      return { n: num / divisor, d: den / divisor };
+    }
+
+    const whole = trimmed.match(/^(\d+)(?!\s*\/)/);
+    if (whole) {
+      const num = Number(whole[1]);
+      if (!Number.isFinite(num)) {
+        return null;
+      }
+      return { n: num, d: 1 };
+    }
+
+    return null;
+  }
+
+  function areEquivalentChoices(leftText, rightText) {
+    const left = parseChoiceTextToFraction(leftText);
+    const right = parseChoiceTextToFraction(rightText);
+    if (!left || !right) {
+      return false;
+    }
+    return left.n * right.d === right.n * left.d;
+  }
+
   function openModal() {
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
@@ -124,7 +187,11 @@
       choices.forEach((c) => (c.disabled = true));
 
       const selectedChoice = question.choices[state.selected];
-      const isCorrect = selectedChoice.id === question.correctChoiceId;
+      const canonicalCorrectChoice = question.choices.find((choice) => choice.id === question.correctChoiceId);
+      const isEquivalentCorrect = canonicalCorrectChoice
+        ? areEquivalentChoices(selectedChoice.text, canonicalCorrectChoice.text)
+        : false;
+      const isCorrect = selectedChoice.id === question.correctChoiceId || isEquivalentCorrect;
       if (isCorrect) {
         state.score += 1;
         choices[state.selected].classList.add("correct");
