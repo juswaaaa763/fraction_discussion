@@ -311,6 +311,7 @@ p {
 .btn-chip {
   background: var(--surface-strong);
   border: 2.5px solid var(--ink);
+  color: var(--text);
   box-shadow: var(--shadow-sm);
   border-radius: var(--radius-sm);
   padding: 0.5rem 0.65rem;
