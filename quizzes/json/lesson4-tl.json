@@ -1,4 +1,4 @@
-﻿{
+{
     "title":  "Aralin 4 Pagsusulit",
     "description":  "Pagsasanay sa pagbabawas ng dalawang halong bilang.",
     "questions":  [
@@ -24,6 +24,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Hanapin ang LCD ng 3 at 5 (ito ay 15), pagkatapos i-convert ang dalawang fraction bago magbawas. Hindi na kailangan manghiram dahil mas malaki ang 2/3 kaysa 2/5 pagkatapos i-convert.",
                           "explanation":  "Ang LCD ay 15. 2/3=10/15, 2/5=6/15. Pagkakaiba ng bahagi ng fraction ay 4/15 at buong bilang pagkakaiba ay 4."
                       },
                       {
@@ -48,6 +49,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/4 sa ikawalo para magkatugma sa denominator ng 6/8, pagkatapos direktang ibawas ang mga fraction.",
                           "explanation":  "1/4 = 2/8. Pagkatapos 6/8 - 2/8 = 4/8 = 1/2. Pagkakaiba ng buong bilang: 7."
                       },
                       {
@@ -72,6 +74,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD ng 10 at 6 ay 30. I-convert muna ang dalawang fraction, dahil mas malaki pa rin ang 9/10 (bilang 27/30) kaysa 2/6 (bilang 10/30) kaya hindi na kailangan manghiram.",
                           "explanation":  "Gamitin ang LCD 30: 9/10=27/30, 2/6=10/30. Pagkakaiba ng bahagi ng fraction ay 17/30; buong bilang pagkakaiba ay 1."
                       },
                       {
@@ -96,6 +99,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                            "hint":  "I-convert ang 1/2 at 1/3 sa ikaanim. Dahil mas malaki ang 3/6 kaysa 2/6, maaari nang direktang magbawas nang hindi manghihiram.",
                           "explanation":  "Ang LCD ay 6. 1/2=3/6, 1/3=2/6. Pagkakaiba: 1 at 1/6."
                       },
                       {
@@ -120,6 +124,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD ng 8 at 3 ay 24. I-convert ang dalawang fraction, pagkatapos magbawas dahil mas malaki na ang 5/8 kaysa 1/3.",
                           "explanation":  "Ang LCD ay 24: 5/8=15/24 at 1/3=8/24. Pagkakaiba ng bahagi ng fraction ay 7/24; buong bilang ay 14."
                       },
                       {
@@ -144,6 +149,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 3/5 at 3/4 sa ikadalawampu. Dahil mas maliit ang 12/20 kaysa 15/20, kakailanganin mong manghiram ng 1 mula sa buong bilang na 17 bago magbawas.",
                           "explanation":  "Ang LCD ay 20: 3/5=12/20, 3/4=15/20. Manghiram 1: 16 at 32/20. 32/20-15/20=17/20."
                       },
                       {
@@ -168,6 +174,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Dahil mas maliit ang 1/2 kaysa 3/4, hindi ka maaaring direktang magbawas. Manghiram ng 1 mula sa buong bilang na 25 at i-rewrite ito bilang fraction na may parehong denominator ng 3/4.",
                           "explanation":  "Manghiram mula sa 25: 24 6/4 - 15 3/4 = 9 3/4."
                       },
                       {
@@ -192,6 +199,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/2 sa ikaanim para magtugma sa 5/6. Dahil mas maliit ang 3/6 kaysa 5/6, manghiram ng 1 mula sa 87 bago magbawas.",
                           "explanation":  "LCD 6: 1/2=3/6. Manghiram ng 1 mula sa 87 nagbibigay 86 at 9/6. 9/6-5/6=4/6=2/3, buong bilang pagkakaiba 31."
                       },
                       {
@@ -216,6 +224,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/3 at 1/2 sa ikaanim. Dahil mas maliit ang 2/6 kaysa 3/6, manghiram ng 1 mula sa buong bilang na 18 bago magbawas.",
                           "explanation":  "LCD 6: 1/3=2/6, 1/2=3/6. Manghiram 1 nagbibigay 17 at 8/6. 8/6-3/6=5/6. Pagkakaiba ng buong bilang 2."
                       },
                       {
@@ -240,6 +249,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/3 at 3/4 sa ikalabindalawa. Dahil mas maliit ang 4/12 kaysa 9/12, manghiram ng 1 mula sa 24 bago magbawas.",
                           "explanation":  "Ang LCD ay 12: 1/3=4/12 at 3/4=9/12. Manghiram 1: 23 at 16/12. 16/12-9/12=7/12."
                       },
                       {
@@ -264,6 +274,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Hanapin ang LCD ng 8 at 3 (ito ay 24), i-convert ang dalawang fraction, at magbawas dahil mas malaki na ang 5/8 kaysa 1/3.",
                           "explanation":  "Ang LCD ay 24: 5/8=15/24 at 1/3=8/24. Pagkakaiba ng bahagi ng fraction 7/24, buong bilang pagkakaiba 1."
                       },
                       {
@@ -288,6 +299,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 2/5 at 1/4 sa ikadalawampu. Dahil mas malaki ang 8/20 kaysa 5/20, maaari nang magbawas nang hindi na kailangang manghiram.",
                           "explanation":  "Ang LCD ay 20: 2/5=8/20 at 1/4=5/20. Pagkakaiba ay 3/20 at buong bilang pagkakaiba 9."
                       },
                       {
@@ -312,6 +324,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-simplify muna ang 6/10 tungong 3/5, pagkatapos i-convert ang dalawang fraction sa ikadalawampu. Dahil mas maliit ang 12/20 kaysa 15/20, kakailanganin mong manghiram mula sa buong bilang bago magbawas.",
                           "explanation":  "2 6/10 = 2 3/5 = 2 12/20; 1 3/4 = 1 15/20. Manghiram: 1 at 32/20. Ibawas nagbibigay 17/20."
                       },
                       {
@@ -336,6 +349,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/2 at 2/3 sa ikaanim. Dahil mas maliit ang 3/6 kaysa 4/6, manghiram ng 1 mula sa buong bilang na 3 bago magbawas.",
                           "explanation":  "LCD 6: 1/2=3/6, 2/3=4/6. Manghiram ng 1 mula sa 3 nagbibigay 2 at 9/6. 9/6-4/6=5/6; buong bilang 1."
                       },
                       {
@@ -360,6 +374,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/2 at 1/3 sa ikaanim. Dahil mas malaki na ang 3/6 kaysa 2/6, maaari nang direktang magbawas — hindi na kailangan manghiram.",
                           "explanation":  "I-convert sa ikaanim: 1/2=3/6 at 1/3=2/6. Pagkakaiba ay 1 at 1/6."
                       }
                   ]

@@ -8,6 +8,7 @@
     selected: null,
     userAnswers: [],
     isFinished: false,
+    showHint: false,
   };
 
   const modal = document.getElementById("quiz-modal");
@@ -107,6 +108,27 @@
     return { ...raw, questions };
   }
 
+  function buildHint(question) {
+    if (typeof question.hint === "string" && question.hint.trim()) {
+      return question.hint.trim();
+    }
+
+    const prompt = typeof question.prompt === "string" ? question.prompt : "";
+    const lowerPrompt = prompt.toLowerCase();
+
+    if (lowerPrompt.includes("how much") || lowerPrompt.includes("remains") || lowerPrompt.includes("equals")) {
+      return "Read the story carefully, identify the two amounts to subtract, and set up the subtraction before solving.";
+    }
+
+    if (/\d+\s+\d+\/\d+/.test(prompt) || /\d+\/\d+/.test(prompt)) {
+      if (lowerPrompt.includes(" - ")) {
+        return "Rewrite the numbers so the fractional parts can be subtracted, then subtract carefully and simplify.";
+      }
+    }
+
+    return "Break the problem into smaller steps: rewrite the numbers if needed, subtract carefully, and simplify at the end.";
+  }
+
   function renderQuestion() {
     const language = window.LanguageService.LANGUAGES[state.lang];
     const t = language.quizText;
@@ -114,6 +136,9 @@
     const isLast = state.currentIndex === state.quiz.questions.length - 1;
     const remaining = state.quiz.questions.length - (state.currentIndex + 1);
     const progress = Math.round(((state.currentIndex + 1) / state.quiz.questions.length) * 100);
+    const hintText = buildHint(question);
+    const hasHint = Boolean(hintText);
+    state.showHint = false;
 
     modalBody.innerHTML = `
       <div class="quiz-header">
@@ -126,6 +151,20 @@
       <div class="bar-shell"><div class="bar-fill" style="width:${progress}%"></div></div>
       <article class="quiz-question">
         <h4>${question.prompt}</h4>
+        ${
+          hasHint
+            ? `
+              <div class="quiz-hint">
+                <button id="hint-toggle" class="hint-toggle" type="button" aria-expanded="false" aria-controls="hint-panel">
+                  ${t.showHint}
+                </button>
+                <div id="hint-panel" class="hint-panel" hidden>
+                  <p><strong>${t.hintLabel}:</strong> ${hintText}</p>
+                </div>
+              </div>
+            `
+            : ""
+        }
         <div class="quiz-choices">
           ${question.choices
             .map(
@@ -153,6 +192,17 @@
     const choices = modalBody.querySelectorAll(".choice-btn");
     const nextBtn = modalBody.querySelector("#next-btn");
     const prevBtn = modalBody.querySelector("#prev-btn");
+    const hintToggle = modalBody.querySelector("#hint-toggle");
+    const hintPanel = modalBody.querySelector("#hint-panel");
+
+    if (hintToggle && hintPanel) {
+      hintToggle.addEventListener("click", () => {
+        state.showHint = !state.showHint;
+        hintPanel.hidden = !state.showHint;
+        hintToggle.textContent = state.showHint ? t.hideHint : t.showHint;
+        hintToggle.setAttribute("aria-expanded", String(state.showHint));
+      });
+    }
 
     choices.forEach((choiceBtn) => {
       choiceBtn.addEventListener("click", () => {
@@ -320,6 +370,7 @@
     state.selected = null;
     state.userAnswers = [];
     state.isFinished = false;
+    state.showHint = false;
 
     try {
       const response = await fetch(quizFilePath(lessonId, lang));

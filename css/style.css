@@ -2,21 +2,28 @@
   --bg-1: #eef0ff;
   --bg-2: #e2e6ff;
   --ink: #16123a;
-  --surface: rgba(255, 255, 255, 0.92);
+  --surface: rgba(255, 255, 255, 0.94);
   --surface-strong: #ffffff;
   --text: #16123a;
   --text-muted: #524d78;
   --primary: #ff3d81;
   --primary-soft: #ffe1ee;
   --accent: #8b5cf6;
+  --certificate-ink: #16123a;
   --accent-2: #2fe6e6;
   --lime: #a6ff2f;
   --yellow: #ffcc00;
   --success: #16c784;
   --danger: #ff4d5e;
-  --shadow: 8px 8px 0 var(--ink);
-  --shadow-sm: 4px 4px 0 var(--ink);
-  --shadow-lg: 12px 12px 0 var(--ink);
+
+  /* Layered "3D" shadow system: a hard offset edge + a soft diffuse
+     drop shadow underneath it. This is what gives cards a raised,
+     tactile, toy-block feel instead of a flat sticker look. */
+  --shadow-sm: 3px 3px 0 var(--ink), 7px 9px 16px rgba(22, 18, 58, 0.16);
+  --shadow: 6px 6px 0 var(--ink), 12px 16px 28px rgba(22, 18, 58, 0.20);
+  --shadow-lg: 9px 9px 0 var(--ink), 20px 26px 44px rgba(22, 18, 58, 0.26);
+  --shadow-press: 2px 2px 0 var(--ink), 4px 4px 8px rgba(22, 18, 58, 0.18);
+
   --glass-border: 3px solid var(--ink);
   --radius-xl: 28px;
   --radius-lg: 22px;
@@ -31,16 +38,17 @@
   --bg-1: #0d0b26;
   --bg-2: #150f3d;
   --ink: #f4f2ff;
-  --surface: rgba(24, 19, 61, 0.92);
+  --surface: rgba(24, 19, 61, 0.94);
   --surface-strong: #181339;
   --text: #f4f2ff;
   --text-muted: #b7aeef;
   --primary: #ff6b9d;
   --primary-soft: rgba(255, 61, 129, 0.18);
   --accent-2: #4bf3f3;
-  --shadow: 8px 8px 0 #050318;
-  --shadow-sm: 4px 4px 0 #050318;
-  --shadow-lg: 12px 12px 0 #050318;
+  --shadow-sm: 3px 3px 0 #050318, 7px 9px 16px rgba(0, 0, 0, 0.45);
+  --shadow: 6px 6px 0 #050318, 12px 16px 28px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 9px 9px 0 #050318, 20px 26px 44px rgba(0, 0, 0, 0.55);
+  --shadow-press: 2px 2px 0 #050318, 4px 4px 8px rgba(0, 0, 0, 0.4);
   --glass-border: 3px solid #4b3fa8;
 }
 
@@ -57,16 +65,48 @@ body {
   font-family: var(--font-body);
   color: var(--text);
   background-color: var(--bg-1);
-  background-image:
-    radial-gradient(at 12% 8%, rgba(255, 61, 129, 0.14) 0px, transparent 45%),
-    radial-gradient(at 88% 6%, rgba(47, 230, 230, 0.14) 0px, transparent 45%),
-    radial-gradient(at 90% 92%, rgba(166, 255, 47, 0.12) 0px, transparent 45%),
-    radial-gradient(at 6% 94%, rgba(139, 92, 246, 0.14) 0px, transparent 45%);
-  background-attachment: fixed;
-  background-size: 200% 200%;
-  animation: meshGradient 30s ease infinite;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+}
+
+/*
+  Background image handling
+  --------------------------------------------------------------
+  The photo lives on a fixed, blurred, slightly desaturated layer
+  (body::before) so it reads as ambience/texture rather than noise.
+  A tinted gradient scrim (body::after) sits on top of it to pull the
+  colors back in line with the brand palette and guarantee every
+  section keeps enough contrast, even before any text hits it.
+  All real content sits in opaque or near-opaque cards above both
+  layers, so legibility never depends on where the busy artwork
+  happens to be.
+*/
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20px;
+  z-index: -3;
+  background-image: url("../assets/images/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(7px) saturate(1.05) brightness(0.92);
+  transform: scale(1.06);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(165deg, rgba(22, 18, 58, 0.72) 0%, rgba(58, 41, 138, 0.62) 45%, rgba(255, 61, 129, 0.38) 100%);
+}
+
+[data-theme="dark"] body::after {
+  background:
+    linear-gradient(165deg, rgba(5, 3, 24, 0.9) 0%, rgba(21, 15, 61, 0.88) 50%, rgba(139, 92, 246, 0.42) 100%);
 }
 
 h1, h2, h3 {
@@ -177,29 +217,30 @@ p {
   bottom: -10%;
   height: 45%;
   background-image:
-    linear-gradient(rgba(139, 92, 246, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.18) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.10) 1px, transparent 1px);
   background-size: 48px 48px;
   transform: perspective(300px) rotateX(60deg);
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .drift {
   position: absolute;
   font-weight: 800;
   font-family: var(--font-display);
-  color: rgba(139, 92, 246, 0.28);
+  color: rgba(255, 255, 255, 0.22);
   animation: float 14s ease-in-out infinite;
+  filter: drop-shadow(0 2px 3px rgba(22, 18, 58, 0.35));
 }
 
-.shape-star { left: 8%; top: 22%; font-size: 2.4rem; color: rgba(255, 204, 0, 0.4); }
+.shape-star { left: 8%; top: 22%; font-size: 2.4rem; color: rgba(255, 204, 0, 0.45); }
 .shape-bolt { left: 84%; top: 16%; font-size: 2.6rem; color: rgba(47, 230, 230, 0.4); animation-duration: 11s; }
 .shape-halfpipe { left: 20%; top: 78%; font-size: 3.2rem; animation-delay: 2s; }
-.shape-frac { left: 58%; top: 8%; font-size: 2.8rem; color: rgba(255, 61, 129, 0.32); animation-duration: 16s; }
+.shape-frac { left: 58%; top: 8%; font-size: 2.8rem; color: rgba(255, 130, 180, 0.4); animation-duration: 16s; }
 .shape-frac2 { left: 74%; top: 66%; font-size: 2.4rem; color: rgba(166, 255, 47, 0.4); animation-delay: 1.5s; }
 .shape-diamond { left: 40%; top: 60%; font-size: 1.8rem; animation-duration: 12s; }
 .shape-star2 { left: 90%; top: 44%; font-size: 2rem; color: rgba(255, 204, 0, 0.35); animation-delay: 3s; }
-.shape-plus { left: 4%; top: 55%; font-size: 2.6rem; color: rgba(139, 92, 246, 0.3); }
+.shape-plus { left: 4%; top: 55%; font-size: 2.6rem; color: rgba(200, 180, 255, 0.35); }
 
 /* ---------- Layout shell ---------- */
 .site-header, .section, .site-footer {
@@ -271,6 +312,7 @@ p {
   border: 2.5px solid var(--ink);
   border-radius: 50%;
   font-size: 1.1rem;
+  box-shadow: var(--shadow-press);
 }
 
 .nav-links {
@@ -319,8 +361,8 @@ p {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.btn-chip:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
-.btn-chip:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+.btn-chip:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow); }
+.btn-chip:active { transform: translate(2px, 2px); box-shadow: var(--shadow-press); }
 
 .menu-toggle {
   display: none;
@@ -376,6 +418,7 @@ p {
   letter-spacing: 0.5px;
   margin-bottom: 1.2rem;
   border: 2.5px solid var(--ink);
+  box-shadow: var(--shadow-press);
 }
 
 .hero h1 {
@@ -410,10 +453,21 @@ p {
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-sm);
+  isolation: isolate;
 }
 
-.btn:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--ink); }
-.btn:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+/* Glossy diagonal highlight for a more premium, tactile button feel */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 45%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.btn:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow); }
+.btn:active { transform: translate(2px, 2px); box-shadow: var(--shadow-press); }
 
 .btn:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible {
   outline: 3px solid var(--accent-2);
@@ -451,6 +505,7 @@ p {
   border: 2.5px solid var(--ink);
   border-radius: 8px;
   transform: rotate(6deg);
+  box-shadow: var(--shadow-press);
 }
 
 .hero-card {
@@ -498,7 +553,31 @@ p {
   box-sizing: border-box;
 }
 
-.section-head { max-width: 680px; margin-bottom: 2rem; }
+/*
+  Section headers used to sit directly on the page background with no
+  surface behind them, which is exactly where the busy photo made text
+  hard to read. They're now a proper card: opaque surface, thick ink
+  border, and the same layered shadow as everything else, so contrast
+  is guaranteed anywhere on the page.
+*/
+.section-head {
+  max-width: 680px;
+  margin-bottom: 2rem;
+  background: var(--surface-strong);
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.8rem;
+  box-shadow: var(--shadow);
+}
+
+/* Inside an already-card alt-section, drop the nested card look and
+   just keep clean, high-contrast text. */
+.alt-section .section-head {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
 
 .section-kicker {
   color: var(--primary);
@@ -509,6 +588,11 @@ p {
   font-size: 0.85rem;
   margin-bottom: 0.75rem;
   display: inline-block;
+}
+
+.section-head p:not(.section-kicker) {
+  color: var(--text-muted);
+  margin-top: 0.5rem;
 }
 
 .controls-row {
@@ -552,8 +636,38 @@ select:hover { transform: translateY(-2px); }
   padding: 1.6rem;
   box-shadow: var(--shadow);
   border: var(--glass-border);
-  transition: transform 0.2s ease;
+  transition: box-shadow 0.25s ease;
   position: relative;
+}
+
+/* Shadow grows on hover for every card, tilt-driven or not — this
+   never touches `transform`, so it can't fight the JS tilt effect. */
+.lesson-card:hover, .quiz-card:hover, .solution-card:hover, .about-grid article:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* The translateY/rotate lift only applies to cards that are NOT also
+   .tilt-card. Elements with both classes (e.g. the About cards, and
+   possibly your JS-rendered lesson/quiz cards) already get a mouse-follow
+   3D tilt from app.js using .tilt-card's own fast 0.15s transition —
+   adding a second, slower transform transition here would make that
+   tilt feel laggy instead of crisp. Plain (non-tilt) cards still get
+   the lift as before. */
+.lesson-card:not(.tilt-card),
+.quiz-card:not(.tilt-card),
+.about-grid article:not(.tilt-card) {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+}
+
+.lesson-card:not(.tilt-card):hover,
+.quiz-card:not(.tilt-card):hover,
+.about-grid article:not(.tilt-card):hover {
+  transform: translateY(-6px) rotate(-0.6deg);
+}
+
+.lesson-card:not(.tilt-card):nth-child(even):hover,
+.quiz-card:not(.tilt-card):nth-child(even):hover {
+  transform: translateY(-6px) rotate(0.6deg);
 }
 
 .about-icon {
@@ -580,6 +694,7 @@ select:hover { transform: translateY(-2px); }
   border-radius: 8px;
   padding: 0.2rem 0.6rem;
   margin-bottom: 0.8rem;
+  box-shadow: var(--shadow-press);
 }
 
 .lesson-diagram {
@@ -612,7 +727,8 @@ select:hover { transform: translateY(-2px); }
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(13, 11, 38, 0.6);
+  background: rgba(13, 11, 38, 0.68);
+  backdrop-filter: blur(4px);
   display: grid;
   place-content: center;
   padding: 1rem;
@@ -675,6 +791,31 @@ select:hover { transform: translateY(-2px); }
 
 .quiz-choices { display: grid; gap: 0.6rem; margin-top: 1rem; }
 
+.quiz-hint { margin-top: 0.9rem; margin-bottom: 0.25rem; }
+
+.hint-toggle {
+  border: 2px solid var(--ink);
+  background: var(--surface-strong);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.hint-toggle:hover { transform: translate(-1px, -1px); }
+
+.hint-panel {
+  margin-top: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  background: var(--primary-soft);
+  color: var(--text);
+}
+
 .choice-btn {
   text-align: left;
   border: 2.5px solid var(--ink);
@@ -689,7 +830,7 @@ select:hover { transform: translateY(-2px); }
   color: var(--text);
 }
 
-.choice-btn:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+.choice-btn:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: var(--shadow-sm); }
 
 .choice-btn.selected:not(.correct):not(.incorrect) {
   border-color: var(--accent);
@@ -756,22 +897,58 @@ select:hover { transform: translateY(-2px); }
 }
 
 .back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
-.back-to-top:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--ink); }
+.back-to-top:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow-lg); }
 
-.site-footer { text-align: center; color: var(--text-muted); padding: 2.4rem 0 3rem; font-weight: 600; }
+/* Footer used to be bare text floating on the busy background.
+   It's now a capped-off card that matches the rest of the system. */
+.site-footer {
+  text-align: center;
+  color: var(--text);
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 1.6rem 2rem;
+  background: var(--surface-strong);
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
 
-.certificate-panel { max-width: 920px; }
+/* .modal-panel sets `width: min(830px, 100vw)`, and this class only
+   overrode `max-width` (920px) — which never kicked in since 830px
+   was already below that cap. That's why the certificate rendered at
+   a fixed ~830px regardless of content, reading as roughly square.
+   Setting `width` directly here overrides the modal default (later
+   rule + equal specificity wins) so the certificate can go wider on
+   desktop, while still shrinking to fit small screens. */
+.certificate-panel {
+  width: min(1660px, 92vw);
+  max-width: 1660px;
+}
 
 .certificate-card {
-  border: 6px solid var(--ink);
+  /* Card had no width set before, so it silently stretched to whatever
+     .certificate-panel gave it — 100% of a panel that was originally
+     only ~830px wide. .certificate-panel is already set to
+     `width: min(1660px, 92vw)` (roughly double the original), so
+     filling it at 100% here doubles the card itself on desktop.
+     No height property is set (and none is added), so height stays
+     purely a function of content/padding — only the horizontal size
+     changes. (Using a percentage bigger than 100% here would overflow
+     the modal panel and force horizontal scrolling, so 100% is
+     intentional — the doubling comes from the panel's own width.) */
+  width: 100%;
+  border: 6px solid var(--certificate-ink);
   border-radius: 20px;
   background: linear-gradient(140deg, #fff8e6, #ffe1ee);
   padding: 1.8rem;
   text-align: center;
   position: relative;
+  color: var(--certificate-ink);
+  box-shadow: 0 14px 42px rgba(22, 18, 58, 0.16);
 }
 
-.certificate-card h2 { font-size: clamp(1.5rem, 3vw, 2.3rem); color: var(--ink); }
+.certificate-card h2 { font-size: clamp(1.5rem, 3vw, 2.3rem); color: var(--certificate-ink); }
 
 .certificate-name {
   font-size: clamp(1.3rem, 2.6vw, 2rem);
@@ -781,24 +958,83 @@ select:hover { transform: translateY(-2px); }
   font-weight: 800;
 }
 
-.certificate-meta { display: grid; gap: 0.4rem; max-width: 540px; margin: 1rem auto; text-align: left; color: var(--ink); }
+.certificate-meta { display: grid; gap: 0.4rem; max-width: 540px; margin: 1rem auto; text-align: left; color: var(--certificate-ink); }
 
 .certificate-actions { display: flex; justify-content: center; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap; }
 
+/* FIX: was `border: 2.5px solid var(--ink);` — `--ink` flips to a
+   near-white color in dark mode ([data-theme="dark"] --ink: #f4f2ff),
+   which made this callout's border nearly invisible against its
+   permanently light background. `--certificate-ink` is never
+   redefined inside [data-theme="dark"], so it stays #16123a in both
+   themes — consistent with every other ink-colored element inside
+   .certificate-card (border, headings, meta text). */
 .certificate-unlock {
   background: linear-gradient(130deg, #fff2fa, #eef0ff);
-  border: 2.5px solid var(--ink);
+  border: 2.5px solid var(--certificate-ink);
   border-radius: var(--radius-md);
   padding: 1rem;
   margin-top: 1rem;
 }
 
+/* The certificate card is rendered as a grid item inside
+   #quiz-dashboard (repeat(auto-fit, minmax(280px, 1fr))), alongside
+   the 4 quiz cards. With 5 total items and 3 columns fitting on
+   desktop, the last row only has 2 cards, leaving the 3rd column
+   empty. Spanning 2 columns lets it fill that leftover space instead
+   of the grid ending with dead space on the right. Scoped to
+   min-width so narrow/mobile layouts (1 column) aren't affected. */
+@media (min-width: 700px) {
+  .quiz-dashboard .certificate-unlock,
+  #quiz-dashboard .certificate-unlock {
+    grid-column: span 2;
+  }
+}
+
 [data-theme="dark"] .certificate-card {
-  background: linear-gradient(140deg, #241a55, #150f3d);
+  background: linear-gradient(140deg, #fff8e6, #ffe1ee);
+  background-color: #fff8e6;
+  color: #16123a !important;
+  border-color: var(--accent-2);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.35);
 }
 
 [data-theme="dark"] .certificate-card h2,
-[data-theme="dark"] .certificate-meta { color: var(--text); }
+[data-theme="dark"] .certificate-card p,
+[data-theme="dark"] .certificate-card strong,
+[data-theme="dark"] .certificate-card .certificate-meta {
+  color: #16123a !important;
+}
+
+[data-theme="dark"] .certificate-name { color: var(--primary) !important; }
+
+/* FIX: .certificate-unlock is a light card (cream/pink gradient) that
+   stays the same in both themes — but nothing inside it was ever
+   locked to a matching text color, so its heading/paragraph/button
+   text inherited var(--text), which is near-white in dark mode
+   (#f4f2ff). That produced white-on-white/light-pink text ("Print
+   Certificate", the "Pass all 4 quizzes..." copy, "Locked"). Force the
+   same fixed ink color used everywhere else in the certificate. */
+[data-theme="dark"] .certificate-unlock,
+[data-theme="dark"] .certificate-unlock p,
+[data-theme="dark"] .certificate-unlock h2,
+[data-theme="dark"] .certificate-unlock h3,
+[data-theme="dark"] .certificate-unlock strong,
+[data-theme="dark"] .certificate-unlock span,
+[data-theme="dark"] .certificate-unlock li {
+  color: #16123a !important;
+}
+
+/* Buttons inside the unlock panel (e.g. a disabled "Locked" button,
+   or "Print Certificate" once unlocked) need the same treatment —
+   .btn-outline and disabled buttons otherwise pick up var(--text)
+   and var(--surface-strong), both of which invert in dark mode. */
+
+[data-theme="dark"] .certificate-actions .btn-outline {
+  color: #16123a !important;
+  background: #ffffff !important;
+  border-color: #16123a !important;
+}
 
 @media print {
   body * { visibility: hidden; }

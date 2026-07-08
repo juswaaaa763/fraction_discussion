@@ -24,6 +24,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Manghiram ng 1 mula sa whole number at gawin itong fraction tulad ng 3/3.",
                           "explanation":  "Isulat muli 2 as 1 3/3. Pagkatapos 1 3/3 - 1/3 = 1 2/3."
                       },
                       {
@@ -48,6 +49,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Palitan ang 5 ng 4 4/4 bago magbawas.",
                           "explanation":  "Palitan ang anyo 5 as 4 4/4. Pagkatapos 4 4/4 - 3/4 = 4 1/4."
                       },
                       {
@@ -72,6 +74,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Isipin ang 1 bilang isang buong pizza na hinati sa 8 piraso.",
                           "explanation":  "Isulat muli 1 as 8/8. Pagkatapos 8/8 - 5/8 = 3/8."
                       },
                       {
@@ -96,6 +99,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Gamitin ang 5 bilang denominator mo kapag manghiram ka mula sa 10.",
                           "explanation":  "Palitan ang anyo 10 as 9 5/5. Pagkatapos 9 5/5 - 2/5 = 9 3/5."
                       },
                       {
@@ -120,6 +124,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Palitan ang 4 ng 3 6/6.",
                           "explanation":  "Isulat muli 4 as 3 6/6, pagkatapos ibawas 1/6."
                       },
                       {
@@ -144,6 +149,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Gawing 10/10 ang fraction na bahagi.",
                           "explanation":  "Palitan ang anyo 12 as 11 10/10. Pagkakaiba ay 11 3/10."
                       },
                       {
@@ -168,6 +174,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "c",
+                          "hint": "Ibawas ang 4 mula sa 9 para sa iyong bagong numerator.",
                           "explanation":  "Isulat muli 8 as 7 9/9. Pagkatapos 9/9 - 4/9 = 5/9."
                       },
                       {
@@ -192,6 +199,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "b",
+                          "hint": "Ang iyong bagong whole number ay magiging 14.",
                           "explanation":  "Palitan ang anyo 15 as 14 7/7. Pagkatapos ibawas 3/7 para maging 14 4/7."
                       },
                       {
@@ -216,6 +224,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Isipin kung ano ang kalahati na mas mababa sa 25.",
                           "explanation":  "Isulat muli 25 as 24 2/2. Pagkatapos ibawas 1/2."
                       },
                       {
@@ -240,6 +249,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "1 unit lang ang hiniram mula sa 6.",
                           "explanation":  "Isulat muli 6 as 5 12/12, pagkatapos 12/12 - 11/12 = 1/12."
                       },
                       {
@@ -264,6 +274,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "c",
+                          "hint": "I-set up ang equation na 5 - 2/3.",
                           "explanation":  "Palitan ang anyo 5 as 4 3/3. Pagkatapos ibawas 2/3."
                       },
                       {
@@ -288,6 +299,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Manghiram ng isang cake at hiwain ito sa 6 na piraso.",
                           "explanation":  "Isulat muli 3 as 2 6/6. Pagkatapos 6/6 - 5/6 = 1/6."
                       },
                       {
@@ -312,6 +324,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Ibawas ang 1/4 mula sa 2.",
                           "explanation":  "Palitan ang anyo 2 as 1 4/4. Pagkatapos ibawas 1/4."
                       },
                       {
@@ -336,6 +349,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Palitan ang 8 ng 7 5/5.",
                           "explanation":  "Isulat muli 8 as 7 5/5, pagkatapos ibawas 3/5."
                       },
                       {
@@ -360,6 +374,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "b",
+                          "hint": "Hanapin ang 12 - 7/8.",
                           "explanation":  "Palitan ang anyo 12 as 11 8/8. Ibawas 7/8 para maging 11 1/8."
                       }
                   ]

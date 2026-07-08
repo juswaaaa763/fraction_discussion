@@ -1,4 +1,4 @@
-﻿{
+{
     "title":  "Leksyon 4 Pagsulay",
     "description":  "Praktis sa pagbawas sa duha ka sinagol nga numero.",
     "questions":  [
@@ -24,6 +24,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Pangitaa ang LCD sa 3 ug 5 nga mao ang 15. I-convert ang duha ka fractions sa ika-15 sa dili pa magbawas.",
                           "explanation":  "Ang LCD kay 15. 2/3=10/15, 2/5=6/15. Kalainan sa fraction kay 4/15 ug tibuok nga numero kalainan kay 4."
                       },
                       {
@@ -48,6 +49,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "I-convert ang 1/4 ngadto sa ika-8 aron managsama ang denominator. Dayon ibawas ang mga fractions ug whole numbers.",
                           "explanation":  "1/4 = 2/8. Unya 6/8 - 2/8 = 4/8 = 1/2. Kalainan sa tibuok nga numero: 7."
                       },
                       {
@@ -72,6 +74,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Pangitaa ang LCD sa 10 ug 6 nga mao ang 30. I-convert ang duha ka fractions sa ika-30.",
                           "explanation":  "Gamita ang LCD 30: 9/10=27/30, 2/6=10/30. Kalainan sa fraction kay 17/30; tibuok nga numero kalainan kay 1."
                       },
                       {
@@ -96,6 +99,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD sa 2 ug 3 kay 6. I-convert ang 1/2 ngadto sa 3/6 ug ang 1/3 ngadto sa 2/6.",
                           "explanation":  "Ang LCD kay 6. 1/2=3/6, 1/3=2/6. Kalainan: 1 ug 1/6."
                       },
                       {
@@ -120,6 +124,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Pangitaa ang LCD sa 8 ug 3 nga mao ang 24. I-convert ang mga fractions ug ibawas ang whole numbers ug fractions.",
                           "explanation":  "Ang LCD kay 24: 5/8=15/24 ug 1/3=8/24. Kalainan sa fraction kay 7/24; tibuok nga numero kay 14."
                       },
                       {
@@ -144,6 +149,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD sa 5 ug 4 kay 20. Kay ang 12/20 mas gamay kay sa 15/20, kinahanglan manghulam og 1 gikan sa 17.",
                           "explanation":  "Ang LCD kay 20: 3/5=12/20, 3/4=15/20. Manghulam 1: 16 ug 32/20. 32/20-15/20=17/20."
                       },
                       {
@@ -168,6 +174,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Kay ang 1/2 mas gamay kay sa 3/4, manghulam og 1 gikan sa 25 aron mahimong 24 6/4.",
                           "explanation":  "Manghulam gikan sa 25: 24 6/4 - 15 3/4 = 9 3/4."
                       },
                       {
@@ -192,6 +199,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD sa 2 ug 6 kay 6. I-convert ang 1/2 ngadto sa 3/6. Manghulam og 1 gikan sa 87 aron mahimong 86 9/6.",
                           "explanation":  "LCD 6: 1/2=3/6. Manghulam og 1 gikan sa 87 naghatag 86 ug 9/6. 9/6-5/6=4/6=2/3, tibuok nga numero kalainan 31."
                       },
                       {
@@ -216,6 +224,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Pangitaa ang LCD sa 3 ug 2 nga mao ang 6. I-convert ang mga fractions ug manghulam gikan sa 18.",
                           "explanation":  "LCD 6: 1/3=2/6, 1/2=3/6. Manghulam 1 naghatag 17 ug 8/6. 8/6-3/6=5/6. Kalainan sa tibuok nga numero 2."
                       },
                       {
@@ -240,6 +249,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD sa 3 ug 4 kay 12. I-convert ang 1/3 ngadto sa 4/12 ug ang 3/4 ngadto sa 9/12. Manghulam gikan sa 24.",
                           "explanation":  "Ang LCD kay 12: 1/3=4/12 ug 3/4=9/12. Manghulam 1: 23 ug 16/12. 16/12-9/12=7/12."
                       },
                       {
@@ -264,6 +274,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Pangitaa ang LCD sa 8 ug 3 nga mao ang 24. I-convert ang 5/8 ngadto sa 15/24 ug ang 1/3 ngadto sa 8/24.",
                           "explanation":  "Ang LCD kay 24: 5/8=15/24 ug 1/3=8/24. Kalainan sa fraction 7/24, tibuok nga numero kalainan 1."
                       },
                       {
@@ -288,6 +299,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD sa 5 ug 4 kay 20. I-convert ang 2/5 ngadto sa 8/20 ug ang 1/4 ngadto sa 5/20.",
                           "explanation":  "Ang LCD kay 20: 2/5=8/20 ug 1/4=5/20. Kalainan kay 3/20 ug tibuok nga numero kalainan 9."
                       },
                       {
@@ -312,6 +324,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Una, pasayona ang 6/10 ngadto sa 3/5. Dayon pangitaa ang LCD sa 5 ug 4 nga mao ang 20. Manghulam kay ang 12/20 mas gamay kay sa 15/20.",
                           "explanation":  "2 6/10 = 2 3/5 = 2 12/20; 1 3/4 = 1 15/20. Manghulam: 1 ug 32/20. Ibawas naghatag 17/20."
                       },
                       {
@@ -336,6 +349,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Ang LCD sa 2 ug 3 kay 6. I-convert ang 1/2 ngadto sa 3/6 ug ang 2/3 ngadto sa 4/6. Manghulam gikan sa 3.",
                           "explanation":  "LCD 6: 1/2=3/6, 2/3=4/6. Manghulam og 1 gikan sa 3 naghatag 2 ug 9/6. 9/6-4/6=5/6; tibuok nga numero 1."
                       },
                       {
@@ -360,6 +374,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint":  "Pangitaa ang LCD sa 2 ug 3 nga mao ang 6. I-convert ang 1/2 ngadto sa 3/6 ug ang 1/3 ngadto sa 2/6. Ibawas ang mga fractions ug whole numbers.",
                           "explanation":  "I-convert ngadto sa ikaanom: 1/2=3/6 ug 1/3=2/6. Kalainan kay 1 ug 1/6."
                       }
                   ]

@@ -1,366 +1,381 @@
 ﻿{
-    "title":  "Aralin 2 Pagsusulit",
-    "description":  "Pagsasanay sa pagbabawas ng wastong fraction mula sa halong bilang.",
-    "questions":  [
-                      {
-                          "id":  "l2q1",
-                          "prompt":  "4 5/6 - 1/6 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "4 2/3"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 4/6"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 2/3"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 1/2"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Pareho ang denominator: 5/6 - 1/6 = 4/6, kaya ang tamang sagot ay 4 4/6 (o 4 2/3)."
-                      },
-                      {
-                          "id":  "l2q2",
-                          "prompt":  "5 7/8 - 3/8 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "5 4/8"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "5 1/4"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 1/2"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Ibawas mga bahaging fraction: 7/8 - 3/8 = 4/8. Kaya ang tamang sagot ay 5 4/8 o 5 1/2."
-                      },
-                      {
-                          "id":  "l2q3",
-                          "prompt":  "2 3/4 - 1/2 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "2 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 2/2"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "2 1/4"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "1 1/4"
-                                          }
-                                      ],
-                          "correctChoiceId":  "c",
-                          "explanation":  "Gawing 1/2 na 2/4. Pagkatapos 2 3/4 - 2/4 = 2 1/4."
-                      },
-                      {
-                          "id":  "l2q4",
-                          "prompt":  "6 4/5 - 2/3 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 2/15"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "6 6/15"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "6 2/15"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "6 2/2"
-                                          }
-                                      ],
-                          "correctChoiceId":  "c",
-                          "explanation":  "Ang LCD ay 15. 4/5=12/15 at 2/3=10/15. Pagkakaiba ay 2/15. Buong bilang mananatili 6."
-                      },
-                      {
-                          "id":  "l2q5",
-                          "prompt":  "3 1/3 - 5/6 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "2 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 3/6"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 1/2"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "3 4/6"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "1/3 = 2/6. Manghiram ng 1 mula sa 3: 2 at 8/6. Pagkatapos 8/6 - 5/6 = 3/6 = 1/2. Sagot 2 1/2."
-                      },
-                      {
-                          "id":  "l2q6",
-                          "prompt":  "7 8/9 - 2/9 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "7 6/9"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "7 2/3"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "7 7/9"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "6 6/9"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "8/9 - 2/9 = 6/9, kaya ang tamang sagot ay 7 6/9 (na masisimple bilang 7 2/3)."
-                      },
-                      {
-                          "id":  "l2q7",
-                          "prompt":  "4 3/10 - 1/5 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "4 1/10"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 2/5"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 9/10"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 4/10"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "1/5=2/10. Pagkatapos 3/10 - 2/10 = 1/10. Buong bilang ang natitira 4."
-                      },
-                      {
-                          "id":  "l2q8",
-                          "prompt":  "8 1/4 - 3/4 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "7 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "8 2/4"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "7 2/4"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "7 3/4"
-                                          }
-                                      ],
-                          "correctChoiceId":  "c",
-                          "explanation":  "Manghiram mula sa 8: 7 5/4. Pagkatapos 5/4 - 3/4 = 2/4, kaya ang tamang sagot ay 7 2/4 (o 7 1/2)."
-                      },
-                      {
-                          "id":  "l2q9",
-                          "prompt":  "5 1/6 - 1/4 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 1/12"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 11/12"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "5 5/12"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 7/12"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Gamitin ang Ang LCD ay 12: 1/6=2/12, 1/4=3/12. Manghiram ng 1 mula sa 5 para maging 4 at 14/12. 14/12-3/12=11/12."
-                      },
-                      {
-                          "id":  "l2q10",
-                          "prompt":  "9 2/5 - 1/2 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "8 9/10"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "9 1/3"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "8 4/10"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "9 3/10"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "Ang LCD ay 10: 2/5=4/10, 1/2=5/10. Manghiram mula sa 9 nagbibigay 8 at 14/10. 14/10-5/10=9/10."
-                      },
-                      {
-                          "id":  "l2q11",
-                          "prompt":  "3 3/4 m ng tela bawasan ng 1/4 m na nagamit ay katumbas ng?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "3 1/2 m"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 1/2 m"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 m"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "3 2/4 m"
-                                          }
-                                      ],
-                          "correctChoiceId":  "d",
-                          "explanation":  "3/4 - 1/4 = 2/4, kaya 3 2/4 m ang natitira."
-                      },
-                      {
-                          "id":  "l2q12",
-                          "prompt":  "2 1/2 tasa needed, 1/8 cup available. Gaano pa karami ang kailangan?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "2 1/4 tasa"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 3/8 tasa"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "1 7/8 tasa"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "2 tasa"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "2 1/2 = 2 4/8. Ibawas 1/8: 2 3/8 tasa still needed."
-                      },
-                      {
-                          "id":  "l2q13",
-                          "prompt":  "5 1/3 litro bawasan ng 2/3 litro ay katumbas ng?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 2/3 litro"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 2/3 litro"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "4 1/3 litro"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "5 1/3 litro"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Manghiram mula sa 5: 4 at 4/3. Pagkatapos 4/3-2/3=2/3. Sagot ay 4 2/3."
-                      },
-                      {
-                          "id":  "l2q14",
-                          "prompt":  "4 1/5 talampakang kahoy bawasan ng 1/2 ft na pinutol ay katumbas ng?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "3 7/10 ft"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "3 9/10 ft"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "4 3/10 ft"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 1/3 ft"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "Ang LCD ay 10: 1/5=2/10, 1/2=5/10. Manghiram 1 nagbibigay 3 at 12/10. 12/10-5/10=7/10."
-                      },
-                      {
-                          "id":  "l2q15",
-                          "prompt":  "1 1/6 oras bawasan ng 3/4 hr ay katumbas ng?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5/12 hr"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "7/12 hr"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "1/2 hr"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "2/12 hr"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "1 1/6 = 14/12 at 3/4 = 9/12. Pagkakaiba ay 5/12 oras."
-                      }
-                  ]
+    "title": "Aralin 2 Pagsusulit",
+    "description": "Pagsasanay sa pagbabawas ng wastong fraction mula sa halong bilang.",
+    "questions": [
+        {
+            "id": "l2q1",
+            "prompt": "4 5/6 - 1/6 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "4 2/3"
+                },
+                {
+                    "id": "b",
+                    "text": "4 4/6"
+                },
+                {
+                    "id": "c",
+                    "text": "3 2/3"
+                },
+                {
+                    "id": "d",
+                    "text": "4 1/2"
+                }
+            ],
+            "hint": "Dahil pareho na ang denominator, ibawas na lang ang numerator at i-simplify ang resulta sa pinakasimpleng anyo.",
+            "explanation": "Pareho ang denominator: 5/6 - 1/6 = 4/6, kaya ang tamang sagot ay 4 4/6 (o 4 2/3).",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q2",
+            "prompt": "5 7/8 - 3/8 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "5 4/8"
+                },
+                {
+                    "id": "c",
+                    "text": "5 1/4"
+                },
+                {
+                    "id": "d",
+                    "text": "4 1/2"
+                }
+            ],
+            "hint": "Ibawas muna ang itaas na numero ng mga fraction, pagkatapos i-simplify ang 4/8.",
+            "explanation": "Ibawas mga bahaging fraction: 7/8 - 3/8 = 4/8. Kaya ang tamang sagot ay 5 4/8 o 5 1/2.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q3",
+            "prompt": "2 3/4 - 1/2 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "2 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "2 2/2"
+                },
+                {
+                    "id": "c",
+                    "text": "2 1/4"
+                },
+                {
+                    "id": "d",
+                    "text": "1 1/4"
+                }
+            ],
+            "hint": "Hanapin ang common denominator ng 4 at 2 bago magbawas.",
+            "explanation": "Gawing 1/2 na 2/4. Pagkatapos 2 3/4 - 2/4 = 2 1/4.",
+            "correctChoiceId": "c"
+        },
+        {
+            "id": "l2q4",
+            "prompt": "6 4/5 - 2/3 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 2/15"
+                },
+                {
+                    "id": "b",
+                    "text": "6 6/15"
+                },
+                {
+                    "id": "c",
+                    "text": "6 2/15"
+                },
+                {
+                    "id": "d",
+                    "text": "6 2/2"
+                }
+            ],
+            "hint": "Ang least common multiple ng 5 at 3 ay 15. I-rename muna ang dalawang fraction.",
+            "explanation": "Ang LCD ay 15. 4/5=12/15 at 2/3=10/15. Pagkakaiba ay 2/15. Buong bilang mananatili 6.",
+            "correctChoiceId": "c"
+        },
+        {
+            "id": "l2q5",
+            "prompt": "3 1/3 - 5/6 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "2 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "2 3/6"
+                },
+                {
+                    "id": "c",
+                    "text": "3 1/2"
+                },
+                {
+                    "id": "d",
+                    "text": "3 4/6"
+                }
+            ],
+            "hint": "I-convert ang 1/3 sa 2/6. Dahil hindi ito mababawasan ng 5/6, kailangang manghiram ng 1 mula sa whole number na 3.",
+            "explanation": "1/3 = 2/6. Manghiram ng 1 mula sa 3: 2 at 8/6. Pagkatapos 8/6 - 5/6 = 3/6 = 1/2. Sagot 2 1/2.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q6",
+            "prompt": "7 8/9 - 2/9 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "7 6/9"
+                },
+                {
+                    "id": "b",
+                    "text": "7 2/3"
+                },
+                {
+                    "id": "c",
+                    "text": "7 7/9"
+                },
+                {
+                    "id": "d",
+                    "text": "6 6/9"
+                }
+            ],
+            "hint": "Pareho na ang denominator, kaya ibawas ang 2 mula sa 8 at i-simplify ang resulta.",
+            "explanation": "8/9 - 2/9 = 6/9, kaya ang tamang sagot ay 7 6/9 (na masisimple bilang 7 2/3).",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q7",
+            "prompt": "4 3/10 - 1/5 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "4 1/10"
+                },
+                {
+                    "id": "b",
+                    "text": "4 2/5"
+                },
+                {
+                    "id": "c",
+                    "text": "3 9/10"
+                },
+                {
+                    "id": "d",
+                    "text": "4 4/10"
+                }
+            ],
+            "hint": "Baguhin ang 1/5 sa katumbas na fraction na may denominator na 10.",
+            "explanation": "1/5=2/10. Pagkatapos 3/10 - 2/10 = 1/10. Buong bilang ang natitira 4.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q8",
+            "prompt": "8 1/4 - 3/4 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "7 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "8 2/4"
+                },
+                {
+                    "id": "c",
+                    "text": "7 2/4"
+                },
+                {
+                    "id": "d",
+                    "text": "7 3/4"
+                }
+            ],
+            "hint": "Hindi mababawasan ang 1/4 sa 3/4. Manghiram ng 1 whole mula sa 8 at idagdag ang 4/4 sa bahagi ng fraction.",
+            "explanation": "Manghiram mula sa 8: 7 5/4. Pagkatapos 5/4 - 3/4 = 2/4, kaya ang tamang sagot ay 7 2/4 (o 7 1/2).",
+            "correctChoiceId": "c"
+        },
+        {
+            "id": "l2q9",
+            "prompt": "5 1/6 - 1/4 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 1/12"
+                },
+                {
+                    "id": "b",
+                    "text": "4 11/12"
+                },
+                {
+                    "id": "c",
+                    "text": "5 5/12"
+                },
+                {
+                    "id": "d",
+                    "text": "4 7/12"
+                }
+            ],
+            "hint": "Ang lowest common denominator ng 6 at 4 ay 12. Kakailanganin ang regrouping.",
+            "explanation": "Gamitin ang Ang LCD ay 12: 1/6=2/12, 1/4=3/12. Manghiram ng 1 mula sa 5 para maging 4 at 14/12. 14/12-3/12=11/12.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q10",
+            "prompt": "9 2/5 - 1/2 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "8 9/10"
+                },
+                {
+                    "id": "b",
+                    "text": "9 1/3"
+                },
+                {
+                    "id": "c",
+                    "text": "8 4/10"
+                },
+                {
+                    "id": "d",
+                    "text": "9 3/10"
+                }
+            ],
+            "hint": "Ang LCD ng 5 at 2 ay 10. I-convert, manghiram mula sa 9, pagkatapos magbawas.",
+            "explanation": "Ang LCD ay 10: 2/5=4/10, 1/2=5/10. Manghiram mula sa 9 nagbibigay 8 at 14/10. 14/10-5/10=9/10.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q11",
+            "prompt": "3 3/4 m ng tela bawasan ng 1/4 m na nagamit ay katumbas ng?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "3 1/2 m"
+                },
+                {
+                    "id": "b",
+                    "text": "2 1/2 m"
+                },
+                {
+                    "id": "c",
+                    "text": "3 m"
+                },
+                {
+                    "id": "d",
+                    "text": "3 2/4 m"
+                }
+            ],
+            "hint": "I-set up ang pangungusap na 3 3/4 minus 1/4, ibawas ang magkatulad na fraction, pagkatapos i-simplify.",
+            "explanation": "3/4 - 1/4 = 2/4, kaya 3 2/4 m ang natitira.",
+            "correctChoiceId": "d"
+        },
+        {
+            "id": "l2q12",
+            "prompt": "2 1/2 tasa needed, 1/8 cup available. Gaano pa karami ang kailangan?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "2 1/4 tasa"
+                },
+                {
+                    "id": "b",
+                    "text": "2 3/8 tasa"
+                },
+                {
+                    "id": "c",
+                    "text": "1 7/8 tasa"
+                },
+                {
+                    "id": "d",
+                    "text": "2 tasa"
+                }
+            ],
+            "hint": "I-convert ang 1/2 sa eighths para magkapareho ang denominator ng dalawang fraction.",
+            "explanation": "2 1/2 = 2 4/8. Ibawas 1/8: 2 3/8 tasa still needed.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q13",
+            "prompt": "5 1/3 litro bawasan ng 2/3 litro ay katumbas ng?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 2/3 litro"
+                },
+                {
+                    "id": "b",
+                    "text": "4 2/3 litro"
+                },
+                {
+                    "id": "c",
+                    "text": "4 1/3 litro"
+                },
+                {
+                    "id": "d",
+                    "text": "5 1/3 litro"
+                }
+            ],
+            "hint": "Dahil mas maliit ang 1/3 kaysa 2/3, manghiram ng 1 mula sa whole number na 5 para maging 4 at 4/3.",
+            "explanation": "Manghiram mula sa 5: 4 at 4/3. Pagkatapos 4/3-2/3=2/3. Sagot ay 4 2/3.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q14",
+            "prompt": "4 1/5 talampakang kahoy bawasan ng 1/2 ft na pinutol ay katumbas ng?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "3 7/10 ft"
+                },
+                {
+                    "id": "b",
+                    "text": "3 9/10 ft"
+                },
+                {
+                    "id": "c",
+                    "text": "4 3/10 ft"
+                },
+                {
+                    "id": "d",
+                    "text": "4 1/3 ft"
+                }
+            ],
+            "hint": "Baguhin ang mga denominator sa 10. Kailangang manghiram mula sa whole number na 4 para makumpleto ang hakbang.",
+            "explanation": "Ang LCD ay 10: 1/5=2/10, 1/2=5/10. Manghiram 1 nagbibigay 3 at 12/10. 12/10-5/10=7/10.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q15",
+            "prompt": "1 1/6 oras bawasan ng 3/4 hr ay katumbas ng?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5/12 hr"
+                },
+                {
+                    "id": "b",
+                    "text": "7/12 hr"
+                },
+                {
+                    "id": "c",
+                    "text": "1/2 hr"
+                },
+                {
+                    "id": "d",
+                    "text": "2/12 hr"
+                }
+            ],
+            "hint": "Hanapin ang LCD ng 6 at 4, na siyang 12. Manghiram mula sa 1 whole para maging improper fraction bago magbawas.",
+            "explanation": "1 1/6 = 14/12 at 3/4 = 9/12. Pagkakaiba ay 5/12 oras.",
+            "correctChoiceId": "a"
+        }
+    ]
 }

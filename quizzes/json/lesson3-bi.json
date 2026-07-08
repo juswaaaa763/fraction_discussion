@@ -24,6 +24,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Manghulam og 1 gikan sa whole number nga 2 ug himoa kini nga fraction sama sa 3/3.",
                           "explanation":  "Isulat pag-usab 2 as 1 3/3. Unya 1 3/3 - 1/3 = 1 2/3."
                       },
                       {
@@ -48,6 +49,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Ilisi ang 5 ngadto sa 4 4/4 sa dili pa magbawas.",
                           "explanation":  "Ilisi ang porma 5 as 4 4/4. Unya 4 4/4 - 3/4 = 4 1/4."
                       },
                       {
@@ -72,6 +74,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Hunahunaa ang 1 nga usa ka tibuok nga pizza nga ginuntarying ngadto sa 8 ka piraso.",
                           "explanation":  "Isulat pag-usab 1 as 8/8. Unya 8/8 - 5/8 = 3/8."
                       },
                       {
@@ -96,6 +99,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Gamita ang 5 nga imong denominator kung manghulam ka gikan sa 10.",
                           "explanation":  "Ilisi ang porma 10 as 9 5/5. Unya 9 5/5 - 2/5 = 9 3/5."
                       },
                       {
@@ -120,6 +124,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Ilisi ang 4 ngadto sa 3 6/6.",
                           "explanation":  "Isulat pag-usab 4 as 3 6/6, unya ibawas 1/6."
                       },
                       {
@@ -144,6 +149,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Himoa ang fraction nga bahin nga 10/10.", 
                           "explanation":  "Ilisi ang porma 12 as 11 10/10. Kalainan kay 11 3/10."
                       },
                       {
@@ -168,6 +174,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "c",
+                          "hint": "Ibawas ang 4 gikan sa 9 para sa imong bag-ong numerator.",
                           "explanation":  "Isulat pag-usab 8 as 7 9/9. Unya 9/9 - 4/9 = 5/9."
                       },
                       {
@@ -192,6 +199,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "b",
+                          "hint": "Ang imong bag-ong whole number mahimong 14.",
                           "explanation":  "Ilisi ang porma 15 as 14 7/7. Unya ibawas 3/7 aron mahimong 14 4/7."
                       },
                       {
@@ -216,6 +224,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Hunahunaa kon unsa ang katunga nga ubos sa 25.",
                           "explanation":  "Isulat pag-usab 25 as 24 2/2. Unya ibawas 1/2."
                       },
                       {
@@ -240,6 +249,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "1 unit lang ang gihulam gikan sa 6.",
                           "explanation":  "Isulat pag-usab 6 as 5 12/12, unya 12/12 - 11/12 = 1/12."
                       },
                       {
@@ -264,6 +274,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "c",
+                          "hint": "I-set up ang equation nga 5 - 2/3.",
                           "explanation":  "Ilisi ang porma 5 as 4 3/3. Unya ibawas 2/3."
                       },
                       {
@@ -288,6 +299,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Manghulam og usa ka cake ug guntinga kini ngadto sa 6 ka piraso.",
                           "explanation":  "Isulat pag-usab 3 as 2 6/6. Unya 6/6 - 5/6 = 1/6."
                       },
                       {
@@ -312,6 +324,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Ibawas ang 1/4 gikan sa 2.",
                           "explanation":  "Ilisi ang porma 2 as 1 4/4. Unya ibawas 1/4."
                       },
                       {
@@ -336,6 +349,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "a",
+                          "hint": "Ilisi ang 8 ngadto sa 7 5/5.",
                           "explanation":  "Isulat pag-usab 8 as 7 5/5, unya ibawas 3/5."
                       },
                       {
@@ -360,6 +374,7 @@
                                           }
                                       ],
                           "correctChoiceId":  "b",
+                          "hint": "Pangitaa ang 12 - 7/8.",
                           "explanation":  "Ilisi ang porma 12 as 11 8/8. Ibawas 7/8 aron mahimong 11 1/8."
                       }
                   ]

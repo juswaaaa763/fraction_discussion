@@ -36,6 +36,16 @@
   .result-actions .btn { width: 100%; }
 
   .tilt-card { transform: none !important; }
+
+  /* New section-head/footer cards need the same treatment as
+     .hero-content/.alt-section get above. */
+  .section-head { padding: 1.25rem 1.4rem; }
+  .site-footer { padding: 1.25rem 1.5rem; }
+
+  /* Fixed-position blurred backgrounds are known to be janky on
+     older iOS Safari during momentum scroll; easing the blur here
+     keeps GPU cost down without changing the desktop look. */
+  body::before { filter: blur(5px) saturate(1.05) brightness(0.92); }
 }
 
 @media (max-width: 480px) {
@@ -48,6 +58,9 @@
   .lesson-card, .quiz-card, .solution-card, .modal-panel, .about-grid article {
     padding: 1.25rem;
   }
+
+  .section-head { padding: 1rem 1.2rem; }
+  .site-footer { padding: 1rem 1.2rem; }
 
   .drift { display: none; }
 }

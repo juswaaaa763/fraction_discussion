@@ -1,366 +1,381 @@
 ﻿{
-    "title":  "Leksyon 2 Pagsulay",
-    "description":  "Praktis sa pagbawas og sakto nga fraction gikan sa sinagol nga numero.",
-    "questions":  [
-                      {
-                          "id":  "l2q1",
-                          "prompt":  "4 5/6 - 1/6 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "4 2/3"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 4/6"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 2/3"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 1/2"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Parehas ug denominator: 5/6 - 1/6 = 4/6, busa ang hustong tubag kay 4 4/6 (o 4 2/3)."
-                      },
-                      {
-                          "id":  "l2q2",
-                          "prompt":  "5 7/8 - 3/8 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "5 4/8"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "5 1/4"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 1/2"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Ibawas mga bahin sa fraction: 7/8 - 3/8 = 4/8. Busa ang hustong resulta kay 5 4/8 o 5 1/2."
-                      },
-                      {
-                          "id":  "l2q3",
-                          "prompt":  "2 3/4 - 1/2 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "2 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 2/2"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "2 1/4"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "1 1/4"
-                                          }
-                                      ],
-                          "correctChoiceId":  "c",
-                          "explanation":  "Himua ang 1/2 nga 2/4. Unya 2 3/4 - 2/4 = 2 1/4."
-                      },
-                      {
-                          "id":  "l2q4",
-                          "prompt":  "6 4/5 - 2/3 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 2/15"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "6 6/15"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "6 2/15"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "6 2/2"
-                                          }
-                                      ],
-                          "correctChoiceId":  "c",
-                          "explanation":  "Ang LCD kay 15. 4/5=12/15 ug 2/3=10/15. Kalainan kay 2/15. Tibuok nga numero magpabiling 6."
-                      },
-                      {
-                          "id":  "l2q5",
-                          "prompt":  "3 1/3 - 5/6 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "2 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 3/6"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 1/2"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "3 4/6"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "1/3 = 2/6. Manghulam og 1 gikan sa 3: 2 ug 8/6. Unya 8/6 - 5/6 = 3/6 = 1/2. Resulta 2 1/2."
-                      },
-                      {
-                          "id":  "l2q6",
-                          "prompt":  "7 8/9 - 2/9 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "7 6/9"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "7 2/3"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "7 7/9"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "6 6/9"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "8/9 - 2/9 = 6/9, busa ang hustong tubag kay 7 6/9 (nga mapasayon isip 7 2/3)."
-                      },
-                      {
-                          "id":  "l2q7",
-                          "prompt":  "4 3/10 - 1/5 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "4 1/10"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 2/5"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 9/10"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 4/10"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "1/5=2/10. Unya 3/10 - 2/10 = 1/10. Tibuok nga numero ang nabilin 4."
-                      },
-                      {
-                          "id":  "l2q8",
-                          "prompt":  "8 1/4 - 3/4 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "7 1/2"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "8 2/4"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "7 2/4"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "7 3/4"
-                                          }
-                                      ],
-                          "correctChoiceId":  "c",
-                          "explanation":  "Manghulam gikan sa 8: 7 5/4. Unya 5/4 - 3/4 = 2/4, busa resulta kay 7 2/4 (o 7 1/2)."
-                      },
-                      {
-                          "id":  "l2q9",
-                          "prompt":  "5 1/6 - 1/4 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 1/12"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 11/12"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "5 5/12"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 7/12"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Gamita ang Ang LCD kay 12: 1/6=2/12, 1/4=3/12. Manghulam og 1 gikan sa 5 aron mahimong 4 ug 14/12. 14/12-3/12=11/12."
-                      },
-                      {
-                          "id":  "l2q10",
-                          "prompt":  "9 2/5 - 1/2 = ?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "8 9/10"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "9 1/3"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "8 4/10"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "9 3/10"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "Ang LCD kay 10: 2/5=4/10, 1/2=5/10. Manghulam gikan sa 9 naghatag 8 ug 14/10. 14/10-5/10=9/10."
-                      },
-                      {
-                          "id":  "l2q11",
-                          "prompt":  "3 3/4 m nga panapton minus 1/4 m nga gigamit katumbas sa?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "3 1/2 m"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 1/2 m"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "3 m"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "3 2/4 m"
-                                          }
-                                      ],
-                          "correctChoiceId":  "d",
-                          "explanation":  "3/4 - 1/4 = 2/4, busa 3 2/4 m ang nabilin."
-                      },
-                      {
-                          "id":  "l2q12",
-                          "prompt":  "2 1/2 tasa needed, 1/8 cup available. Pila pa ang kinahanglan?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "2 1/4 tasa"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "2 3/8 tasa"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "1 7/8 tasa"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "2 tasa"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "2 1/2 = 2 4/8. Ibawas 1/8: 2 3/8 tasa still needed."
-                      },
-                      {
-                          "id":  "l2q13",
-                          "prompt":  "5 1/3 litro minus 2/3 litro katumbas sa?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5 2/3 litro"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "4 2/3 litro"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "4 1/3 litro"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "5 1/3 litro"
-                                          }
-                                      ],
-                          "correctChoiceId":  "b",
-                          "explanation":  "Manghulam gikan sa 5: 4 ug 4/3. Unya 4/3-2/3=2/3. Resulta kay 4 2/3."
-                      },
-                      {
-                          "id":  "l2q14",
-                          "prompt":  "4 1/5 tiil nga kahoy minus 1/2 ft nga giputol katumbas sa?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "3 7/10 ft"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "3 9/10 ft"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "4 3/10 ft"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "4 1/3 ft"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "Ang LCD kay 10: 1/5=2/10, 1/2=5/10. Manghulam 1 naghatag 3 ug 12/10. 12/10-5/10=7/10."
-                      },
-                      {
-                          "id":  "l2q15",
-                          "prompt":  "1 1/6 oras minus 3/4 hr katumbas sa?",
-                          "choices":  [
-                                          {
-                                              "id":  "a",
-                                              "text":  "5/12 hr"
-                                          },
-                                          {
-                                              "id":  "b",
-                                              "text":  "7/12 hr"
-                                          },
-                                          {
-                                              "id":  "c",
-                                              "text":  "1/2 hr"
-                                          },
-                                          {
-                                              "id":  "d",
-                                              "text":  "2/12 hr"
-                                          }
-                                      ],
-                          "correctChoiceId":  "a",
-                          "explanation":  "1 1/6 = 14/12 ug 3/4 = 9/12. Kalainan kay 5/12 oras."
-                      }
-                  ]
+    "title": "Leksyon 2 Pagsulay",
+    "description": "Praktis sa pagbawas og sakto nga fraction gikan sa sinagol nga numero.",
+    "questions": [
+        {
+            "id": "l2q1",
+            "prompt": "4 5/6 - 1/6 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "4 2/3"
+                },
+                {
+                    "id": "b",
+                    "text": "4 4/6"
+                },
+                {
+                    "id": "c",
+                    "text": "3 2/3"
+                },
+                {
+                    "id": "d",
+                    "text": "4 1/2"
+                }
+            ],
+            "hint": "Kay pareho na ang denominator, i-subtract lang ang numerator ug i-simplify ang resulta ngadto sa pinakasayon nga porma.",
+            "explanation": "Parehas ug denominator: 5/6 - 1/6 = 4/6, busa ang hustong tubag kay 4 4/6 (o 4 2/3).",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q2",
+            "prompt": "5 7/8 - 3/8 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "5 4/8"
+                },
+                {
+                    "id": "c",
+                    "text": "5 1/4"
+                },
+                {
+                    "id": "d",
+                    "text": "4 1/2"
+                }
+            ],
+            "hint": "I-subtract una ang ibabaw nga numero sa mga fraction, dayon i-simplify ang 4/8.",
+            "explanation": "Ibawas mga bahin sa fraction: 7/8 - 3/8 = 4/8. Busa ang hustong resulta kay 5 4/8 o 5 1/2.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q3",
+            "prompt": "2 3/4 - 1/2 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "2 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "2 2/2"
+                },
+                {
+                    "id": "c",
+                    "text": "2 1/4"
+                },
+                {
+                    "id": "d",
+                    "text": "1 1/4"
+                }
+            ],
+            "hint": "Pangitaa ang common denominator sa 4 ug 2 sa dili pa magbawas.",
+            "explanation": "Himua ang 1/2 nga 2/4. Unya 2 3/4 - 2/4 = 2 1/4.",
+            "correctChoiceId": "c"
+        },
+        {
+            "id": "l2q4",
+            "prompt": "6 4/5 - 2/3 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 2/15"
+                },
+                {
+                    "id": "b",
+                    "text": "6 6/15"
+                },
+                {
+                    "id": "c",
+                    "text": "6 2/15"
+                },
+                {
+                    "id": "d",
+                    "text": "6 2/2"
+                }
+            ],
+            "hint": "Ang least common multiple sa 5 ug 3 kay 15. I-rename una ang duha ka fraction.",
+            "explanation": "Ang LCD kay 15. 4/5=12/15 ug 2/3=10/15. Kalainan kay 2/15. Tibuok nga numero magpabiling 6.",
+            "correctChoiceId": "c"
+        },
+        {
+            "id": "l2q5",
+            "prompt": "3 1/3 - 5/6 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "2 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "2 3/6"
+                },
+                {
+                    "id": "c",
+                    "text": "3 1/2"
+                },
+                {
+                    "id": "d",
+                    "text": "3 4/6"
+                }
+            ],
+            "hint": "I-convert ang 1/3 ngadto sa 2/6. Kay dili kini mabawasan og 5/6, kinahanglan manghulam og 1 gikan sa whole number nga 3.",
+            "explanation": "1/3 = 2/6. Manghulam og 1 gikan sa 3: 2 ug 8/6. Unya 8/6 - 5/6 = 3/6 = 1/2. Resulta 2 1/2.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q6",
+            "prompt": "7 8/9 - 2/9 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "7 6/9"
+                },
+                {
+                    "id": "b",
+                    "text": "7 2/3"
+                },
+                {
+                    "id": "c",
+                    "text": "7 7/9"
+                },
+                {
+                    "id": "d",
+                    "text": "6 6/9"
+                }
+            ],
+            "hint": "Pareho na ang denominator, busa i-subtract ang 2 gikan sa 8 ug i-simplify ang resulta.",
+            "explanation": "8/9 - 2/9 = 6/9, busa ang hustong tubag kay 7 6/9 (nga mapasayon isip 7 2/3).",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q7",
+            "prompt": "4 3/10 - 1/5 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "4 1/10"
+                },
+                {
+                    "id": "b",
+                    "text": "4 2/5"
+                },
+                {
+                    "id": "c",
+                    "text": "3 9/10"
+                },
+                {
+                    "id": "d",
+                    "text": "4 4/10"
+                }
+            ],
+            "hint": "I-usab ang 1/5 ngadto sa katumbas nga fraction nga may denominator nga 10.",
+            "explanation": "1/5=2/10. Unya 3/10 - 2/10 = 1/10. Tibuok nga numero ang nabilin 4.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q8",
+            "prompt": "8 1/4 - 3/4 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "7 1/2"
+                },
+                {
+                    "id": "b",
+                    "text": "8 2/4"
+                },
+                {
+                    "id": "c",
+                    "text": "7 2/4"
+                },
+                {
+                    "id": "d",
+                    "text": "7 3/4"
+                }
+            ],
+            "hint": "Dili mabawasan ang 1/4 sa 3/4. Manghulam og 1 whole gikan sa 8 ug idugang ang 4/4 sa fraction nga bahin.",
+            "explanation": "Manghulam gikan sa 8: 7 5/4. Unya 5/4 - 3/4 = 2/4, busa resulta kay 7 2/4 (o 7 1/2).",
+            "correctChoiceId": "c"
+        },
+        {
+            "id": "l2q9",
+            "prompt": "5 1/6 - 1/4 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 1/12"
+                },
+                {
+                    "id": "b",
+                    "text": "4 11/12"
+                },
+                {
+                    "id": "c",
+                    "text": "5 5/12"
+                },
+                {
+                    "id": "d",
+                    "text": "4 7/12"
+                }
+            ],
+            "hint": "Ang lowest common denominator sa 6 ug 4 kay 12. Kinahanglan ang regrouping.",
+            "explanation": "Gamita ang Ang LCD kay 12: 1/6=2/12, 1/4=3/12. Manghulam og 1 gikan sa 5 aron mahimong 4 ug 14/12. 14/12-3/12=11/12.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q10",
+            "prompt": "9 2/5 - 1/2 = ?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "8 9/10"
+                },
+                {
+                    "id": "b",
+                    "text": "9 1/3"
+                },
+                {
+                    "id": "c",
+                    "text": "8 4/10"
+                },
+                {
+                    "id": "d",
+                    "text": "9 3/10"
+                }
+            ],
+            "hint": "Ang LCD sa 5 ug 2 kay 10. I-convert, manghulam gikan sa 9, dayon pagbawas.",
+            "explanation": "Ang LCD kay 10: 2/5=4/10, 1/2=5/10. Manghulam gikan sa 9 naghatag 8 ug 14/10. 14/10-5/10=9/10.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q11",
+            "prompt": "3 3/4 m nga panapton minus 1/4 m nga gigamit katumbas sa?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "3 1/2 m"
+                },
+                {
+                    "id": "b",
+                    "text": "2 1/2 m"
+                },
+                {
+                    "id": "c",
+                    "text": "3 m"
+                },
+                {
+                    "id": "d",
+                    "text": "3 2/4 m"
+                }
+            ],
+            "hint": "I-set up ang sentence nga 3 3/4 minus 1/4, i-subtract ang managsama nga fraction, dayon i-simplify.",
+            "explanation": "3/4 - 1/4 = 2/4, busa 3 2/4 m ang nabilin.",
+            "correctChoiceId": "d"
+        },
+        {
+            "id": "l2q12",
+            "prompt": "2 1/2 tasa needed, 1/8 cup available. Pila pa ang kinahanglan?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "2 1/4 tasa"
+                },
+                {
+                    "id": "b",
+                    "text": "2 3/8 tasa"
+                },
+                {
+                    "id": "c",
+                    "text": "1 7/8 tasa"
+                },
+                {
+                    "id": "d",
+                    "text": "2 tasa"
+                }
+            ],
+            "hint": "I-convert ang 1/2 ngadto sa eighths aron managsama ang denominator sa duha ka fraction.",
+            "explanation": "2 1/2 = 2 4/8. Ibawas 1/8: 2 3/8 tasa still needed.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q13",
+            "prompt": "5 1/3 litro minus 2/3 litro katumbas sa?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5 2/3 litro"
+                },
+                {
+                    "id": "b",
+                    "text": "4 2/3 litro"
+                },
+                {
+                    "id": "c",
+                    "text": "4 1/3 litro"
+                },
+                {
+                    "id": "d",
+                    "text": "5 1/3 litro"
+                }
+            ],
+            "hint": "Kay gamay ang 1/3 kaysa 2/3, manghulam og 1 gikan sa whole number nga 5 aron mahimo kining 4 ug 4/3.",
+            "explanation": "Manghulam gikan sa 5: 4 ug 4/3. Unya 4/3-2/3=2/3. Resulta kay 4 2/3.",
+            "correctChoiceId": "b"
+        },
+        {
+            "id": "l2q14",
+            "prompt": "4 1/5 tiil nga kahoy minus 1/2 ft nga giputol katumbas sa?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "3 7/10 ft"
+                },
+                {
+                    "id": "b",
+                    "text": "3 9/10 ft"
+                },
+                {
+                    "id": "c",
+                    "text": "4 3/10 ft"
+                },
+                {
+                    "id": "d",
+                    "text": "4 1/3 ft"
+                }
+            ],
+            "hint": "I-usab ang mga denominator ngadto sa 10. Kinahanglan manghulam gikan sa whole number nga 4 aron mahuman ang lakang.",
+            "explanation": "Ang LCD kay 10: 1/5=2/10, 1/2=5/10. Manghulam 1 naghatag 3 ug 12/10. 12/10-5/10=7/10.",
+            "correctChoiceId": "a"
+        },
+        {
+            "id": "l2q15",
+            "prompt": "1 1/6 oras minus 3/4 hr katumbas sa?",
+            "choices": [
+                {
+                    "id": "a",
+                    "text": "5/12 hr"
+                },
+                {
+                    "id": "b",
+                    "text": "7/12 hr"
+                },
+                {
+                    "id": "c",
+                    "text": "1/2 hr"
+                },
+                {
+                    "id": "d",
+                    "text": "2/12 hr"
+                }
+            ],
+            "hint": "Pangitaa ang LCD sa 6 ug 4, nga mao ang 12. Manghulam gikan sa 1 whole aron mahimong improper fraction sa dili pa magbawas.",
+            "explanation": "1 1/6 = 14/12 ug 3/4 = 9/12. Kalainan kay 5/12 oras.",
+            "correctChoiceId": "a"
+        }
+    ]
 }
