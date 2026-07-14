@@ -226,6 +226,8 @@
     videos.forEach((video) => {
       video.addEventListener("play", () => {
         bgMusic.pause();
+        musicToggle.checked = false;
+        localStorage.setItem("musicEnabled", "false");
         const overlay = video.parentElement.querySelector(".video-overlay");
         if (overlay) overlay.style.display = "none";
         
