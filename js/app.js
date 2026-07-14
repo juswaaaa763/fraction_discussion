@@ -220,10 +220,12 @@
         handleQuizStart(btn.dataset.lesson, currentLang);
       });
     });
-
+    const bgMusic = document.getElementById("bgMusic");
+    const musicToggle = document.getElementById("music-toggle");
     const videos = document.querySelectorAll("video.lesson-video");
     videos.forEach((video) => {
       video.addEventListener("play", () => {
+        bgMusic.pause();
         const overlay = video.parentElement.querySelector(".video-overlay");
         if (overlay) overlay.style.display = "none";
         

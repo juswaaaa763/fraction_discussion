@@ -7,7 +7,7 @@
       name="description"
       content="Learn fraction subtraction with 3D lessons, tilt-card badges, and multilingual quizzes."
     />
-    <title>Fraction Flow: Skate Squad</title>
+    <title>Fraction Fusion: Subtraction Edition</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛹</text></svg>" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,8 +19,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/sound-toggle-switch.css">
   </head>
   <body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+      <source src="assets/music/background-music.mp3" type="audio/mpeg">
+    </audio>
+
     <div id="page-loader" class="page-loader" aria-live="polite" aria-label="Loading content">
       <div class="loader-board">
         <div class="board-deck"></div>
@@ -50,7 +56,7 @@
     <header class="site-header" id="home">
       <nav class="navbar" aria-label="Main navigation">
         <div class="nav-inner">
-          <a class="logo" href="#home"><span class="logo-badge">🛹</span>Fraction Flow</a>
+          <a class="logo" href="#home"><span class="logo-badge">🛹</span>Fraction Fusion</a>
           <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
@@ -116,7 +122,7 @@
       <section id="about" class="section">
         <div class="section-head reveal fade-up">
           <p class="section-kicker" data-i18n="about.kicker">About</p>
-          <h2 data-i18n="about.title">Why Fraction Flow?</h2>
+          <h2 data-i18n="about.title">Why Fraction Fusion?</h2>
         </div>
         <div class="about-grid">
           <article class="glass tilt-card reveal fade-up" data-tilt>
@@ -150,7 +156,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> <span data-i18n="footer.text">Fraction Flow Academy. Learn. Practice. Land it.</span></p>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.text">Fraction Fusion. Learn. Practice. Land it.</span></p>
     </footer>
 
     <a href="#home" id="back-to-top" class="back-to-top btn-primary" aria-label="Back to top">
@@ -178,6 +184,14 @@
             <option value="tl">Tagalog</option>
             <option value="bi">Bisaya</option>
           </select>
+        </div>
+        <div class="controls-row" style="margin-top: 15px; width: 100%; justify-content: space-between;">
+            <label for="music-toggle">Background Music</label>
+
+            <label class="music-switch">
+                <input type="checkbox" id="music-toggle">
+                <span class="music-slider"></span>
+            </label>
         </div>
       </div>
     </div>
@@ -210,5 +224,35 @@
     <script src="js/quiz.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/app.js"></script>
+
+        <script>
+      const bgMusic = document.getElementById("bgMusic");
+      const musicToggle = document.getElementById("music-toggle");
+
+      // Load saved setting
+      const musicEnabled = localStorage.getItem("musicEnabled") === "true";
+
+      musicToggle.checked = musicEnabled;
+
+      if (musicEnabled) {
+          bgMusic.play().catch(() => {
+              console.log("Autoplay blocked until user interaction.");
+          });
+      }
+
+      // Listen for toggle changes
+      musicToggle.addEventListener("change", function () {
+
+          if (this.checked) {
+              bgMusic.play();
+              localStorage.setItem("musicEnabled", "true");
+          } else {
+              bgMusic.pause();
+              bgMusic.currentTime = 0; // Optional: restart when turned on again
+              localStorage.setItem("musicEnabled", "false");
+          }
+
+      });
+    </script> 
   </body>
 </html>
